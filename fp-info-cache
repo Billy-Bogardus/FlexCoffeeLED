@@ -1,4 +1,4 @@
-151991824904593
+153546885447431
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -42671,6 +42671,20 @@ ZETA-433-SO_THT
 0
 0
 0
+SamacSys_Parts
+SOIC127P600X175-8N
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SON50P300X300X90-11N-D
+MCP9904
+Integrated Circuit
+0
+11
+11
 Shielding_Cabinets
 Laird_Technologies_97-2002_25.40x25.40mm
 
