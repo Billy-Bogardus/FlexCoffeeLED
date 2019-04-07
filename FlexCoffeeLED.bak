@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:FlexCoffeeLED-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
@@ -16,101 +17,645 @@ $EndDescr
 $Comp
 L Worldsemi:WS2812B LED1
 U 1 1 5CA305D3
-P 2450 2400
-F 0 "LED1" H 2450 2625 50  0000 C CNN
-F 1 "WS2812B" H 2450 2534 50  0000 C CNN
-F 2 "LEDs:LED_WS2812B-PLCC4" H 2450 2100 50  0001 C CNN
-F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 2450 2350 50  0001 C CNN
-	1    2450 2400
+P 4050 3400
+F 0 "LED1" H 4050 3625 50  0000 C CNN
+F 1 "WS2812B" H 4050 3534 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 4050 3100 50  0001 C CNN
+F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 4050 3350 50  0001 C CNN
+	1    4050 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Worldsemi:WS2812B LED2
 U 1 1 5CA30A27
-P 3600 2350
-F 0 "LED2" H 3600 2575 50  0000 C CNN
-F 1 "WS2812B" H 3600 2484 50  0000 C CNN
-F 2 "LEDs:LED_WS2812B-PLCC4" H 3600 2050 50  0001 C CNN
-F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 3600 2300 50  0001 C CNN
-	1    3600 2350
+P 5200 3400
+F 0 "LED2" H 5200 3625 50  0000 C CNN
+F 1 "WS2812B" H 5200 3534 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 5200 3100 50  0001 C CNN
+F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 5200 3350 50  0001 C CNN
+	1    5200 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Worldsemi:WS2812B LED3
 U 1 1 5CA30CEE
-P 4550 2350
-F 0 "LED3" H 4550 2575 50  0000 C CNN
-F 1 "WS2812B" H 4550 2484 50  0000 C CNN
-F 2 "LEDs:LED_WS2812B-PLCC4" H 4550 2050 50  0001 C CNN
-F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 4550 2300 50  0001 C CNN
-	1    4550 2350
+P 6300 3400
+F 0 "LED3" H 6300 3625 50  0000 C CNN
+F 1 "WS2812B" H 6300 3534 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 6300 3100 50  0001 C CNN
+F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 6300 3350 50  0001 C CNN
+	1    6300 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L SamacSys_Parts:MCP9904T-AE_9Q IC?
 U 1 1 5CA31B08
-P 2000 1350
-F 0 "IC?" H 2900 1615 50  0000 C CNN
-F 1 "MCP9904T-AE_9Q" H 2900 1524 50  0000 C CNN
-F 2 "SON50P300X300X90-11N-D" H 3650 1450 50  0001 L CNN
-F 3 "https://mouser.componentsearchengine.com/Datasheets/1/MCP9904T-AE_9Q.pdf" H 3650 1350 50  0001 L CNN
-F 4 "Board Mount Temperature Sensors Quad Temp Sensor Addressable Alerts" H 3650 1250 50  0001 L CNN "Description"
-F 5 "0.9" H 3650 1150 50  0001 L CNN "Height"
-F 6 "" H 3650 1050 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 3650 950 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Microchip" H 3650 850 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCP9904T-AE/9Q" H 3650 750 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2000 1350
+P 7800 1650
+F 0 "IC?" H 8700 1915 50  0000 C CNN
+F 1 "MCP9904T-AE_9Q" H 8700 1824 50  0000 C CNN
+F 2 "SON50P300X300X90-11N-D" H 9450 1750 50  0001 L CNN
+F 3 "https://mouser.componentsearchengine.com/Datasheets/1/MCP9904T-AE_9Q.pdf" H 9450 1650 50  0001 L CNN
+F 4 "Board Mount Temperature Sensors Quad Temp Sensor Addressable Alerts" H 9450 1550 50  0001 L CNN "Description"
+F 5 "0.9" H 9450 1450 50  0001 L CNN "Height"
+F 6 "" H 9450 1350 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 9450 1250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Microchip" H 9450 1150 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCP9904T-AE/9Q" H 9450 1050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7800 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L SamacSys_Parts:PIC18F25K80-I_SO IC?
 U 1 1 5CA342D5
-P 1850 4600
-F 0 "IC?" H 3950 4865 50  0000 C CNN
-F 1 "PIC18F25K80-I_SO" H 3950 4774 50  0000 C CNN
-F 2 "SOIC127P1030X265-28N" H 5900 4700 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/PIC18F25K80-I_SO.pdf" H 5900 4600 50  0001 L CNN
-F 4 "MCU, 32kB Flash,ECAN,12-bit ADC, CTMU" H 5900 4500 50  0001 L CNN "Description"
-F 5 "2.65" H 5900 4400 50  0001 L CNN "Height"
-F 6 "579-PIC18F25K80-I/SO" H 5900 4300 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-PIC18F25K80-I%2FSO" H 5900 4200 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Microchip" H 5900 4100 50  0001 L CNN "Manufacturer_Name"
-F 9 "PIC18F25K80-I/SO" H 5900 4000 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1850 4600
+P 3250 5100
+F 0 "IC?" H 5350 5365 50  0000 C CNN
+F 1 "PIC18F25K80-I_SO" H 5350 5274 50  0000 C CNN
+F 2 "SOIC127P1030X265-28N" H 7300 5200 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/PIC18F25K80-I_SO.pdf" H 7300 5100 50  0001 L CNN
+F 4 "MCU, 32kB Flash,ECAN,12-bit ADC, CTMU" H 7300 5000 50  0001 L CNN "Description"
+F 5 "2.65" H 7300 4900 50  0001 L CNN "Height"
+F 6 "579-PIC18F25K80-I/SO" H 7300 4800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-PIC18F25K80-I%2FSO" H 7300 4700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Microchip" H 7300 4600 50  0001 L CNN "Manufacturer_Name"
+F 9 "PIC18F25K80-I/SO" H 7300 4500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3250 5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:2N3904 Q?
 U 1 1 5CA36038
-P 4650 1350
-F 0 "Q?" H 4840 1396 50  0000 L CNN
-F 1 "2N3904" H 4840 1305 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 1275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4650 1350 50  0001 L CNN
-	1    4650 1350
+P 6950 1450
+F 0 "Q?" H 7140 1496 50  0000 L CNN
+F 1 "2N3904" H 7140 1405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7150 1375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6950 1450 50  0001 L CNN
+	1    6950 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:2N3904 Q?
 U 1 1 5CA36887
-P 5350 1300
-F 0 "Q?" H 5540 1346 50  0000 L CNN
-F 1 "2N3904" H 5540 1255 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5550 1225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5350 1300 50  0001 L CNN
-	1    5350 1300
+P 5800 1900
+F 0 "Q?" H 5990 1946 50  0000 L CNN
+F 1 "2N3904" H 5990 1855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6000 1825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5800 1900 50  0001 L CNN
+	1    5800 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:2N3904 Q?
 U 1 1 5CA36C01
-P 6100 1300
-F 0 "Q?" H 6290 1346 50  0000 L CNN
-F 1 "2N3904" H 6290 1255 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6300 1225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6100 1300 50  0001 L CNN
-	1    6100 1300
+P 6850 1900
+F 0 "Q?" H 7040 1946 50  0000 L CNN
+F 1 "2N3904" H 7040 1855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7050 1825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6850 1900 50  0001 L CNN
+	1    6850 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 1450 6750 1250
+Wire Wire Line
+	5600 1900 5600 1700
+Wire Wire Line
+	5600 1700 5900 1700
+Wire Wire Line
+	7050 1900 7050 2100
+Wire Wire Line
+	7050 2100 6750 2100
+Wire Wire Line
+	5900 2100 6750 2100
+Connection ~ 6750 2100
+Wire Wire Line
+	7050 2100 7800 2100
+Wire Wire Line
+	7800 2100 7800 2050
+Connection ~ 7050 2100
+Wire Wire Line
+	5900 1700 6750 1700
+Connection ~ 5900 1700
+Wire Wire Line
+	6750 1700 7150 1700
+Wire Wire Line
+	7150 1700 7150 1950
+Wire Wire Line
+	7150 1950 7800 1950
+Connection ~ 6750 1700
+Wire Wire Line
+	7800 1850 7300 1850
+Wire Wire Line
+	7300 1850 7300 1650
+Wire Wire Line
+	7300 1650 7050 1650
+Wire Wire Line
+	7800 1750 7400 1750
+Wire Wire Line
+	7400 1750 7400 1250
+Wire Wire Line
+	9600 2050 9850 2050
+Wire Wire Line
+	9850 2050 9850 2150
+Wire Wire Line
+	7800 1650 7800 1400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CA9E66A
+P 7800 1400
+F 0 "#PWR?" H 7800 1250 50  0001 C CNN
+F 1 "+3.3V" H 7815 1573 50  0000 C CNN
+F 2 "" H 7800 1400 50  0001 C CNN
+F 3 "" H 7800 1400 50  0001 C CNN
+	1    7800 1400
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CAA0C63
+P 3650 3150
+F 0 "#PWR?" H 3650 3000 50  0001 C CNN
+F 1 "+5V" H 3665 3323 50  0000 C CNN
+F 2 "" H 3650 3150 50  0001 C CNN
+F 3 "" H 3650 3150 50  0001 C CNN
+	1    3650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CAA255E
+P 4800 3250
+F 0 "#PWR?" H 4800 3100 50  0001 C CNN
+F 1 "+5V" H 4815 3423 50  0000 C CNN
+F 2 "" H 4800 3250 50  0001 C CNN
+F 3 "" H 4800 3250 50  0001 C CNN
+	1    4800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CAA29A3
+P 5900 3250
+F 0 "#PWR?" H 5900 3100 50  0001 C CNN
+F 1 "+5V" H 5915 3423 50  0000 C CNN
+F 2 "" H 5900 3250 50  0001 C CNN
+F 3 "" H 5900 3250 50  0001 C CNN
+	1    5900 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3150 3650 3400
+Wire Wire Line
+	4800 3400 4800 3250
+Wire Wire Line
+	5900 3400 5900 3250
+Wire Wire Line
+	7450 5900 7900 5900
+$Comp
+L power:+5V #PWR?
+U 1 1 5CAA41D5
+P 7900 5800
+F 0 "#PWR?" H 7900 5650 50  0001 C CNN
+F 1 "+5V" H 7915 5973 50  0000 C CNN
+F 2 "" H 7900 5800 50  0001 C CNN
+F 3 "" H 7900 5800 50  0001 C CNN
+	1    7900 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 5800 7900 5900
+$Comp
+L power:GND #PWR?
+U 1 1 5CAA4DB4
+P 9850 2150
+F 0 "#PWR?" H 9850 1900 50  0001 C CNN
+F 1 "GND" H 9855 1977 50  0000 C CNN
+F 2 "" H 9850 2150 50  0001 C CNN
+F 3 "" H 9850 2150 50  0001 C CNN
+	1    9850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAA5599
+P 4450 3500
+F 0 "#PWR?" H 4450 3250 50  0001 C CNN
+F 1 "GND" H 4455 3327 50  0000 C CNN
+F 2 "" H 4450 3500 50  0001 C CNN
+F 3 "" H 4450 3500 50  0001 C CNN
+	1    4450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAA5C01
+P 5600 3500
+F 0 "#PWR?" H 5600 3250 50  0001 C CNN
+F 1 "GND" H 5605 3327 50  0000 C CNN
+F 2 "" H 5600 3500 50  0001 C CNN
+F 3 "" H 5600 3500 50  0001 C CNN
+	1    5600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAA6556
+P 6700 3500
+F 0 "#PWR?" H 6700 3250 50  0001 C CNN
+F 1 "GND" H 6705 3327 50  0000 C CNN
+F 2 "" H 6700 3500 50  0001 C CNN
+F 3 "" H 6700 3500 50  0001 C CNN
+	1    6700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3400 4650 3400
+Wire Wire Line
+	4650 3400 4650 3500
+Wire Wire Line
+	4650 3500 4750 3500
+Wire Wire Line
+	5600 3400 5750 3400
+Wire Wire Line
+	5750 3400 5750 3500
+Wire Wire Line
+	5750 3500 5850 3500
+Text GLabel 9600 1750 2    50   Input ~ 0
+SDA
+Text GLabel 3250 6400 0    50   Input ~ 0
+SCL
+Text GLabel 9600 1650 2    50   Input ~ 0
+SCL
+Text GLabel 7450 6400 2    50   Input ~ 0
+SDA
+Text Label 6100 1700 0    50   ~ 0
+DP2-DN3
+Text Label 6150 2100 0    50   ~ 0
+DN2-DP3
+Text Label 7150 1250 0    50   ~ 0
+DP1
+Text Label 7150 1650 0    50   ~ 0
+DN1
+NoConn ~ 9600 1850
+NoConn ~ 9600 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAC6F3
+P 3000 5800
+F 0 "#PWR?" H 3000 5550 50  0001 C CNN
+F 1 "GND" H 3005 5627 50  0000 C CNN
+F 2 "" H 3000 5800 50  0001 C CNN
+F 3 "" H 3000 5800 50  0001 C CNN
+	1    3000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAACCDF
+P 7900 6000
+F 0 "#PWR?" H 7900 5750 50  0001 C CNN
+F 1 "GND" H 7905 5827 50  0000 C CNN
+F 2 "" H 7900 6000 50  0001 C CNN
+F 3 "" H 7900 6000 50  0001 C CNN
+	1    7900 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 6000 7900 6000
+Wire Wire Line
+	3250 5800 3000 5800
+$Comp
+L Connector:Conn_01x05_Male J?
+U 1 1 5CAAEEF3
+P 2350 5300
+F 0 "J?" H 2500 5700 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 2200 5600 50  0000 C CNN
+F 2 "" H 2350 5300 50  0001 C CNN
+F 3 "~" H 2350 5300 50  0001 C CNN
+	1    2350 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5200 2650 5200
+Wire Wire Line
+	2650 5200 2650 4800
+Wire Wire Line
+	2550 5300 2850 5300
+Wire Wire Line
+	2850 5300 2850 5350
+Text Label 7450 5100 0    50   ~ 0
+PGD
+Text Label 7450 5200 0    50   ~ 0
+PGC
+Text Label 2550 5400 0    50   ~ 0
+PGD
+Text Label 2550 5500 0    50   ~ 0
+PGC
+$Comp
+L power:GND #PWR?
+U 1 1 5CAB3C4D
+P 2850 5350
+F 0 "#PWR?" H 2850 5100 50  0001 C CNN
+F 1 "GND" H 2855 5177 50  0000 C CNN
+F 2 "" H 2850 5350 50  0001 C CNN
+F 3 "" H 2850 5350 50  0001 C CNN
+	1    2850 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CAB40F3
+P 2650 4800
+F 0 "#PWR?" H 2650 4650 50  0001 C CNN
+F 1 "+5V" H 2665 4973 50  0000 C CNN
+F 2 "" H 2650 4800 50  0001 C CNN
+F 3 "" H 2650 4800 50  0001 C CNN
+	1    2650 4800
+	1    0    0    -1  
+$EndComp
+Text Label 3650 3500 2    50   ~ 0
+LED1
+Text Label 4500 3400 0    50   ~ 0
+LED2
+Text Label 5650 3400 0    50   ~ 0
+LED3
+Text Label 6700 3400 0    50   ~ 0
+LED4
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5CAB51C1
+P 7100 3400
+F 0 "J?" H 7072 3332 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 7072 3423 50  0000 R CNN
+F 2 "" H 7100 3400 50  0001 C CNN
+F 3 "~" H 7100 3400 50  0001 C CNN
+	1    7100 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 3400 6900 3400
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5CAB68F8
+P 3200 3500
+F 0 "J?" H 3172 3432 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 3172 3523 50  0000 R CNN
+F 2 "" H 3200 3500 50  0001 C CNN
+F 3 "~" H 3200 3500 50  0001 C CNN
+	1    3200 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5100 3250 5100
+Text Label 3050 5100 0    50   ~ 0
+MCLR
+$Comp
+L SamacSys_Parts:NCP718ASN330T1G IC?
+U 1 1 5CABEA9B
+P 1350 1200
+F 0 "IC?" H 1950 1465 50  0000 C CNN
+F 1 "NCP718ASN330T1G" H 1950 1374 50  0000 C CNN
+F 2 "SOT95P280X100-5N" H 2400 1300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/NCP718ASN330T1G.pdf" H 2400 1200 50  0001 L CNN
+F 4 "300 MA LOW IQ, WIDE INPUT" H 2400 1100 50  0001 L CNN "Description"
+F 5 "1" H 2400 1000 50  0001 L CNN "Height"
+F 6 "863-NCP718ASN330T1G" H 2400 900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=863-NCP718ASN330T1G" H 2400 800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 2400 700 50  0001 L CNN "Manufacturer_Name"
+F 9 "NCP718ASN330T1G" H 2400 600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CAC10DB
+P 2800 1300
+F 0 "#PWR?" H 2800 1150 50  0001 C CNN
+F 1 "+3.3V" H 2815 1473 50  0000 C CNN
+F 2 "" H 2800 1300 50  0001 C CNN
+F 3 "" H 2800 1300 50  0001 C CNN
+	1    2800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CAC195D
+P 900 1150
+F 0 "#PWR?" H 900 1000 50  0001 C CNN
+F 1 "+5V" H 915 1323 50  0000 C CNN
+F 2 "" H 900 1150 50  0001 C CNN
+F 3 "" H 900 1150 50  0001 C CNN
+	1    900  1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAC2557
+P 900 1450
+F 0 "#PWR?" H 900 1200 50  0001 C CNN
+F 1 "GND" H 905 1277 50  0000 C CNN
+F 2 "" H 900 1450 50  0001 C CNN
+F 3 "" H 900 1450 50  0001 C CNN
+	1    900  1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1200 2600 1200
+Wire Wire Line
+	2550 1300 2800 1300
+Wire Wire Line
+	1350 1400 1300 1400
+Wire Wire Line
+	1300 1400 1300 1200
+Wire Wire Line
+	1300 1200 1350 1200
+Connection ~ 1300 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5CAC6B45
+P 2800 1600
+F 0 "#PWR?" H 2800 1350 50  0001 C CNN
+F 1 "GND" H 2805 1427 50  0000 C CNN
+F 2 "" H 2800 1600 50  0001 C CNN
+F 3 "" H 2800 1600 50  0001 C CNN
+	1    2800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CAC713F
+P 2800 1450
+F 0 "C?" H 2915 1496 50  0000 L CNN
+F 1 "1uF" H 2915 1405 50  0000 L CNN
+F 2 "" H 2838 1300 50  0001 C CNN
+F 3 "~" H 2800 1450 50  0001 C CNN
+	1    2800 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 1300
+$Comp
+L device:C C?
+U 1 1 5CAC7FD6
+P 900 1300
+F 0 "C?" H 1015 1346 50  0000 L CNN
+F 1 "1uF" H 1015 1255 50  0000 L CNN
+F 2 "" H 938 1150 50  0001 C CNN
+F 3 "~" H 900 1300 50  0001 C CNN
+	1    900  1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1250 7050 1250
+Connection ~ 7050 1250
+Wire Wire Line
+	7050 1250 7400 1250
+Text Label 7450 5400 0    50   ~ 0
+LED1
+Wire Wire Line
+	900  1150 1300 1150
+Wire Wire Line
+	1300 1150 1300 1200
+Connection ~ 900  1150
+Wire Wire Line
+	1150 1300 1150 1450
+Wire Wire Line
+	1150 1450 900  1450
+Wire Wire Line
+	1150 1300 1350 1300
+Connection ~ 900  1450
+Wire Wire Line
+	2800 1600 2600 1600
+Wire Wire Line
+	2600 1200 2600 1600
+Connection ~ 2800 1600
+$Comp
+L device:C C?
+U 1 1 5CAE26AD
+P 4750 3650
+F 0 "C?" H 4865 3696 50  0000 L CNN
+F 1 "15pF" H 4865 3605 50  0000 L CNN
+F 2 "" H 4788 3500 50  0001 C CNN
+F 3 "~" H 4750 3650 50  0001 C CNN
+	1    4750 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 3500
+Wire Wire Line
+	4750 3500 4800 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5CAE2ED7
+P 4750 3800
+F 0 "#PWR?" H 4750 3550 50  0001 C CNN
+F 1 "GND" H 4755 3627 50  0000 C CNN
+F 2 "" H 4750 3800 50  0001 C CNN
+F 3 "" H 4750 3800 50  0001 C CNN
+	1    4750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CAE5D05
+P 5850 3650
+F 0 "C?" H 5965 3696 50  0000 L CNN
+F 1 "15pF" H 5965 3605 50  0000 L CNN
+F 2 "" H 5888 3500 50  0001 C CNN
+F 3 "~" H 5850 3650 50  0001 C CNN
+	1    5850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAE5D0B
+P 5850 3800
+F 0 "#PWR?" H 5850 3550 50  0001 C CNN
+F 1 "GND" H 5855 3627 50  0000 C CNN
+F 2 "" H 5850 3800 50  0001 C CNN
+F 3 "" H 5850 3800 50  0001 C CNN
+	1    5850 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 3500
+Wire Wire Line
+	5850 3500 5900 3500
+$Comp
+L device:C C?
+U 1 1 5CAE7A91
+P 3550 3650
+F 0 "C?" H 3665 3696 50  0000 L CNN
+F 1 "15pF" H 3665 3605 50  0000 L CNN
+F 2 "" H 3588 3500 50  0001 C CNN
+F 3 "~" H 3550 3650 50  0001 C CNN
+	1    3550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAE8A3F
+P 3550 3800
+F 0 "#PWR?" H 3550 3550 50  0001 C CNN
+F 1 "GND" H 3555 3627 50  0000 C CNN
+F 2 "" H 3550 3800 50  0001 C CNN
+F 3 "" H 3550 3800 50  0001 C CNN
+	1    3550 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3500 3550 3500
+Connection ~ 3550 3500
+Wire Wire Line
+	3550 3500 3650 3500
+$Comp
+L device:R R?
+U 1 1 5CAEAF18
+P 8150 6200
+F 0 "R?" H 8220 6246 50  0000 L CNN
+F 1 "5k" H 8220 6155 50  0000 L CNN
+F 2 "" V 8080 6200 50  0001 C CNN
+F 3 "~" H 8150 6200 50  0001 C CNN
+	1    8150 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5CAEB795
+P 8450 6200
+F 0 "R?" H 8520 6246 50  0000 L CNN
+F 1 "5k" H 8520 6155 50  0000 L CNN
+F 2 "" V 8380 6200 50  0001 C CNN
+F 3 "~" H 8450 6200 50  0001 C CNN
+	1    8450 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CAEFDF1
+P 8300 6000
+F 0 "#PWR?" H 8300 5850 50  0001 C CNN
+F 1 "+3.3V" H 8315 6173 50  0000 C CNN
+F 2 "" H 8300 6000 50  0001 C CNN
+F 3 "" H 8300 6000 50  0001 C CNN
+	1    8300 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 6050 8150 6000
+Wire Wire Line
+	8150 6000 8300 6000
+Wire Wire Line
+	8300 6000 8450 6000
+Wire Wire Line
+	8450 6000 8450 6050
+Connection ~ 8300 6000
+Text GLabel 8150 6350 3    50   Input ~ 0
+SDA
+Text GLabel 8450 6350 3    50   Input ~ 0
+SCL
+Text Notes 750  850  0    197  ~ 0
+3V Linear Regulator
+Text Notes 6450 1000 0    197  ~ 0
+Temperature Sense
+Text Notes 4000 2800 0    197  ~ 0
+LED String
+Text Notes 3650 4700 0    197  ~ 0
+Microcontroller System
 $EndSCHEMATC
