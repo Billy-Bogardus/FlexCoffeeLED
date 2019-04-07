@@ -745,8 +745,8 @@ Text Notes 1100 5350 1    39   ~ 0
 Bridge Jumper after programming MicroController
 Text Notes 1400 4150 0    39   ~ 0
 Keep MCLEAR Components \nwithin 1/4" or 6mm
-Text Notes 7600 3800 0    197  ~ 0
-Pull Up Resistors\nfor I2C Line
+Text Notes 7450 4100 0    197  ~ 0
+Pull Up Resistors \nAnd Level Converter\nfor I2C Line
 Connection ~ 6800 5300
 Wire Wire Line
 	6100 5300 6800 5300
@@ -970,4 +970,23 @@ Wire Wire Line
 	1250 4500 1450 4500
 Wire Wire Line
 	1750 4500 1900 4500
+NoConn ~ 6100 5700
+NoConn ~ 6100 5600
+NoConn ~ 6100 5500
+NoConn ~ 6100 5200
+NoConn ~ 6100 5100
+NoConn ~ 6100 5000
+NoConn ~ 6100 4900
+NoConn ~ 6100 4700
+NoConn ~ 1900 5700
+NoConn ~ 1900 5600
+NoConn ~ 1900 5500
+NoConn ~ 1900 5400
+NoConn ~ 1900 5300
+NoConn ~ 1900 5100
+NoConn ~ 1900 5000
+NoConn ~ 1900 4900
+NoConn ~ 1900 4800
+NoConn ~ 1900 4700
+NoConn ~ 1900 4600
 $EndSCHEMATC
