@@ -1,4 +1,4 @@
-153588024550867
+156711718115719
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -83,6 +83,20 @@ Neosid_Air-Coil_SML_6turn_HAM0631A
 0
 0
 0
+BillysCustomLibs
+Pin_Header_Straight_1x05_Pitch2.54mm_SMD_Flat
+surface-mounted straight pin header, 1x05, 2.54mm pitch, single row, style 1 (pin 1 left)
+Surface mounted pin header SMD 1x05 2.54mm single row style1 pin1 left
+0
+5
+5
+BillysCustomLibs
+TO-92_Inline_Narrow_Oval_SMD
+TO-92 leads in-line, narrow, oval pads, drill 0.6mm (see NXP sot054_po.pdf)
+to-92 sc-43 sc-43a sot54 PA33 transistor
+0
+3
+3
 Buttons_Switches_SMD
 Nidec_Copal_SH-7010A
 
@@ -42692,6 +42706,13 @@ Integrated Circuit
 0
 11
 11
+SamacSys_Parts
+SOP50P310X90-8N
+DCU (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
 SamacSys_Parts
 SOT95P280X100-5N
 NCP718ASN330T1G
