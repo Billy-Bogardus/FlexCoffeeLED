@@ -82,17 +82,6 @@ F 9 "PIC18F25K80-I/SO" H 5950 3900 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:2N3904 Q3
-U 1 1 5CA36038
-P 6950 1450
-F 0 "Q3" H 7140 1496 50  0000 L CNN
-F 1 "2N3904" H 7140 1405 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 7150 1375 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6950 1450 50  0001 L CNN
-	1    6950 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Transistor_BJT:2N3904 Q1
 U 1 1 5CA36887
 P 5700 2000
@@ -127,7 +116,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 2200 6650 2200
 Connection ~ 6650 2200
-Connection ~ 6950 2200
 Wire Wire Line
 	5800 1800 6650 1800
 Connection ~ 5800 1800
@@ -280,9 +268,9 @@ SCL_3V
 Text GLabel 6100 5800 2    50   Input ~ 0
 SDA_5V
 Text Label 6000 1800 0    50   ~ 0
-DP2-DN3
+DP2-DN3_P
 Text Label 6050 2200 0    50   ~ 0
-DN2-DP3
+DN2-DP3_N
 Text Label 7150 1250 0    50   ~ 0
 DP1
 Text Label 7150 1650 0    50   ~ 0
@@ -791,10 +779,6 @@ Wire Wire Line
 	6450 1250 6750 1250
 Connection ~ 6750 1250
 Wire Wire Line
-	7800 1950 7050 1950
-Wire Wire Line
-	6950 2200 7800 2200
-Wire Wire Line
 	7800 2050 7800 2200
 NoConn ~ 8700 2550
 $Comp
@@ -989,4 +973,20 @@ NoConn ~ 1900 4900
 NoConn ~ 1900 4800
 NoConn ~ 1900 4700
 NoConn ~ 1900 4600
+$Comp
+L Transistor_BJT:2N3904 Q3
+U 1 1 5CA36038
+P 6950 1450
+F 0 "Q3" H 7140 1496 50  0000 L CNN
+F 1 "2N3904" H 7140 1405 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 7150 1375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6950 1450 50  0001 L CNN
+	1    6950 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 2200
+Wire Wire Line
+	6950 2200 7800 2200
+Wire Wire Line
+	7800 1950 7050 1950
 $EndSCHEMATC
