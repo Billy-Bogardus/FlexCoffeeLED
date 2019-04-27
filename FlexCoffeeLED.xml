@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:\UserData\Documents\KiCad\FlexCoffeeLED\FlexCoffeeLED.sch</source>
+    <date>4/27/2019 12:19:28 AM</date>
+    <tool>Eeschema (5.1.0)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Flexible Coffee Cup Buddy</title>
+        <company>Billy Bogardus</company>
+        <rev>0.0.0</rev>
+        <date>2019-04-01</date>
+        <source>FlexCoffeeLED.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="LED1">
+      <value>WS2812B</value>
+      <footprint>LEDs:LED_WS2812B-PLCC4</footprint>
+      <datasheet>http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf</datasheet>
+      <libsource lib="Worldsemi" part="WS2812B" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA305D3</tstamp>
+    </comp>
+    <comp ref="LED2">
+      <value>WS2812B</value>
+      <footprint>LEDs:LED_WS2812B-PLCC4</footprint>
+      <datasheet>http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf</datasheet>
+      <libsource lib="Worldsemi" part="WS2812B" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA30A27</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x05_Male</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x05_Male" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CAAEEF3</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CAE26AD</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CAE7A91</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB06AAE</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB146F5</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB14BEA</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB1C00C</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>SolderJMOpen</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB1CCF5</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>LM75BDP,118</value>
+      <footprint>SamacSys_Parts:SOP65P490X110-8N</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/302/LM75B-1126491.pdf</datasheet>
+      <fields>
+        <field name="Description">NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">NXP</field>
+        <field name="Manufacturer_Part_Number">LM75BDP,118</field>
+        <field name="Mouser Part Number">771-LM75BDP</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="LM75BDP,118" description="NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CBC3AB0</tstamp>
+    </comp>
+    <comp ref="IC3">
+      <value>LM75BDP,118</value>
+      <footprint>SamacSys_Parts:SOP65P490X110-8N</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/302/LM75B-1126491.pdf</datasheet>
+      <fields>
+        <field name="Description">NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">NXP</field>
+        <field name="Manufacturer_Part_Number">LM75BDP,118</field>
+        <field name="Mouser Part Number">771-LM75BDP</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="LM75BDP,118" description="NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CBC5752</tstamp>
+    </comp>
+    <comp ref="IC4">
+      <value>LM75BDP,118</value>
+      <footprint>SamacSys_Parts:SOP65P490X110-8N</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/302/LM75B-1126491.pdf</datasheet>
+      <fields>
+        <field name="Description">NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">NXP</field>
+        <field name="Manufacturer_Part_Number">LM75BDP,118</field>
+        <field name="Mouser Part Number">771-LM75BDP</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="LM75BDP,118" description="NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CBC631C</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CBCD198</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CBCE0D2</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CBD0BEA</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CBD1C79</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CBD326C</tstamp>
+    </comp>
+    <comp ref="LED3">
+      <value>WS2812B</value>
+      <footprint>LEDs:LED_WS2812B-PLCC4</footprint>
+      <datasheet>http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf</datasheet>
+      <libsource lib="Worldsemi" part="WS2812B" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC0BCE2</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC0BCF8</tstamp>
+    </comp>
+    <comp ref="LED4">
+      <value>WS2812B</value>
+      <footprint>LEDs:LED_WS2812B-PLCC4</footprint>
+      <datasheet>http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf</datasheet>
+      <libsource lib="Worldsemi" part="WS2812B" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC0E34C</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC0E362</tstamp>
+    </comp>
+    <comp ref="LED5">
+      <value>WS2812B</value>
+      <footprint>LEDs:LED_WS2812B-PLCC4</footprint>
+      <datasheet>http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf</datasheet>
+      <libsource lib="Worldsemi" part="WS2812B" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC107CE</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC107E4</tstamp>
+    </comp>
+    <comp ref="LED6">
+      <value>WS2812B</value>
+      <footprint>LEDs:LED_WS2812B-PLCC4</footprint>
+      <datasheet>http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf</datasheet>
+      <libsource lib="Worldsemi" part="WS2812B" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC12650</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC12666</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x03_Male</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC17420</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x03_Male</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC1DD81</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>PIC16F18426-I_ST</value>
+      <footprint>SOP65P640X120-14N</footprint>
+      <datasheet>https://mouser.componentsearchengine.com/Datasheets/1/PIC16F18426-I_ST.pdf</datasheet>
+      <fields>
+        <field name="Description">8-bit Microcontrollers - MCU 28KB, 2KB RAM, 2xPWMs, Comparator, DAC, 12-bit ADCC, CWG,  EUSART, SPI/I2C</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">PIC16F18426-I/ST</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="PIC16F18426-I_ST" description="8-bit Microcontrollers - MCU 28KB, 2KB RAM, 2xPWMs, Comparator, DAC, 12-bit ADCC, CWG,  EUSART, SPI/I2C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC430F6</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x03_Male">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x05_Male">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_2_Open">
+      <description>Solder Jumper, 2-pole, open</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Open*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_2_Open</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="LM75BDP,118">
+      <description>NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8</description>
+      <docs>https://www.mouser.co.uk/datasheet/2/302/LM75B-1126491.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LM75BDP,118</field>
+        <field name="Footprint">SOP65P490X110-8N</field>
+        <field name="Description">NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8</field>
+        <field name="Height">1.1</field>
+        <field name="Mouser Part Number">771-LM75BDP</field>
+        <field name="Manufacturer_Name">NXP</field>
+        <field name="Manufacturer_Part_Number">LM75BDP,118</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA" type="BiDi"/>
+        <pin num="2" name="SCL" type="BiDi"/>
+        <pin num="3" name="OS" type="BiDi"/>
+        <pin num="4" name="GND" type="BiDi"/>
+        <pin num="5" name="VCC" type="BiDi"/>
+        <pin num="6" name="A0" type="BiDi"/>
+        <pin num="7" name="A1" type="BiDi"/>
+        <pin num="8" name="A2" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="PIC16F18426-I_ST">
+      <description>8-bit Microcontrollers - MCU 28KB, 2KB RAM, 2xPWMs, Comparator, DAC, 12-bit ADCC, CWG,  EUSART, SPI/I2C</description>
+      <docs>https://mouser.componentsearchengine.com/Datasheets/1/PIC16F18426-I_ST.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">PIC16F18426-I_ST</field>
+        <field name="Footprint">SOP65P640X120-14N</field>
+        <field name="Datasheet">https://mouser.componentsearchengine.com/Datasheets/1/PIC16F18426-I_ST.pdf</field>
+        <field name="Description">8-bit Microcontrollers - MCU 28KB, 2KB RAM, 2xPWMs, Comparator, DAC, 12-bit ADCC, CWG,  EUSART, SPI/I2C</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">PIC16F18426-I/ST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="BiDi"/>
+        <pin num="2" name="RA5" type="BiDi"/>
+        <pin num="3" name="RA4" type="BiDi"/>
+        <pin num="4" name="MCLR/VPP/RA3" type="BiDi"/>
+        <pin num="5" name="RC5" type="BiDi"/>
+        <pin num="6" name="RC4" type="BiDi"/>
+        <pin num="7" name="RC3" type="BiDi"/>
+        <pin num="8" name="RC2" type="BiDi"/>
+        <pin num="9" name="RC1" type="BiDi"/>
+        <pin num="10" name="RC0" type="BiDi"/>
+        <pin num="11" name="RA2" type="BiDi"/>
+        <pin num="12" name="RA1/ICSPCLK" type="BiDi"/>
+        <pin num="13" name="RA0/ICSPDAT" type="BiDi"/>
+        <pin num="14" name="VSS" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Worldsemi" part="WS2812B">
+      <description>RGB LED with integrated controller</description>
+      <docs>http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf</docs>
+      <fields>
+        <field name="Reference">LED</field>
+        <field name="Value">WS2812B</field>
+        <field name="Footprint">LEDs:LED_WS2812B-PLCC4</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="DOUT" type="output"/>
+        <pin num="3" name="VSS" type="power_in"/>
+        <pin num="4" name="DIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Jumper.lib</uri>
+    </library>
+    <library logical="SamacSys_Parts">
+      <uri>D:/UserData/Documents/KiCad/BillysLibs/SamacSys_Parts.lib</uri>
+    </library>
+    <library logical="Worldsemi">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Worldsemi.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="C3" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="LED2" pin="3"/>
+      <node ref="LED1" pin="3"/>
+      <node ref="J1" pin="3"/>
+      <node ref="C7" pin="2"/>
+      <node ref="LED3" pin="3"/>
+      <node ref="IC2" pin="14"/>
+      <node ref="J2" pin="3"/>
+      <node ref="J3" pin="1"/>
+      <node ref="IC4" pin="6"/>
+      <node ref="C8" pin="2"/>
+      <node ref="IC4" pin="4"/>
+      <node ref="IC3" pin="8"/>
+      <node ref="IC3" pin="7"/>
+      <node ref="IC3" pin="4"/>
+      <node ref="IC1" pin="8"/>
+      <node ref="IC1" pin="7"/>
+      <node ref="IC1" pin="6"/>
+      <node ref="IC4" pin="8"/>
+      <node ref="IC1" pin="4"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="LED5" pin="3"/>
+      <node ref="C6" pin="2"/>
+      <node ref="LED4" pin="3"/>
+      <node ref="LED6" pin="3"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="IC1" pin="5"/>
+      <node ref="LED5" pin="1"/>
+      <node ref="LED6" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="LED4" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="IC3" pin="5"/>
+      <node ref="C11" pin="1"/>
+      <node ref="IC4" pin="5"/>
+      <node ref="R1" pin="1"/>
+      <node ref="LED2" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="LED3" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="J3" pin="2"/>
+      <node ref="LED1" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="IC2" pin="1"/>
+    </net>
+    <net code="4" name="/SDA2">
+      <node ref="IC2" pin="6"/>
+    </net>
+    <net code="5" name="Net-(IC2-Pad7)">
+      <node ref="IC2" pin="7"/>
+    </net>
+    <net code="6" name="Net-(IC2-Pad8)">
+      <node ref="IC2" pin="8"/>
+    </net>
+    <net code="7" name="/MCLR">
+      <node ref="R2" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="IC2" pin="4"/>
+    </net>
+    <net code="8" name="Net-(IC2-Pad3)">
+      <node ref="IC2" pin="3"/>
+    </net>
+    <net code="9" name="SDA_5V">
+      <node ref="IC2" pin="9"/>
+      <node ref="IC4" pin="1"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="IC3" pin="1"/>
+    </net>
+    <net code="10" name="SCL_5V">
+      <node ref="IC1" pin="2"/>
+      <node ref="IC3" pin="2"/>
+      <node ref="IC4" pin="2"/>
+      <node ref="IC2" pin="10"/>
+    </net>
+    <net code="11" name="/DOUT">
+      <node ref="J3" pin="3"/>
+      <node ref="LED6" pin="2"/>
+    </net>
+    <net code="12" name="/SCL2">
+      <node ref="IC2" pin="5"/>
+    </net>
+    <net code="13" name="/DIN">
+      <node ref="C3" pin="1"/>
+      <node ref="IC2" pin="11"/>
+      <node ref="J2" pin="1"/>
+      <node ref="LED1" pin="4"/>
+    </net>
+    <net code="14" name="Net-(IC2-Pad2)">
+      <node ref="IC2" pin="2"/>
+    </net>
+    <net code="15" name="/LED6">
+      <node ref="LED5" pin="2"/>
+      <node ref="LED6" pin="4"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="16" name="/LED5">
+      <node ref="LED4" pin="2"/>
+      <node ref="LED5" pin="4"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="17" name="/LED4">
+      <node ref="C4" pin="1"/>
+      <node ref="LED4" pin="4"/>
+      <node ref="LED3" pin="2"/>
+    </net>
+    <net code="18" name="/LED3">
+      <node ref="LED3" pin="4"/>
+      <node ref="C1" pin="1"/>
+      <node ref="LED2" pin="2"/>
+    </net>
+    <net code="19" name="Net-(IC4-Pad7)">
+      <node ref="IC4" pin="7"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="20" name="/LED2">
+      <node ref="C5" pin="1"/>
+      <node ref="LED1" pin="2"/>
+      <node ref="LED2" pin="4"/>
+    </net>
+    <net code="21" name="Net-(IC1-Pad3)">
+      <node ref="IC1" pin="3"/>
+    </net>
+    <net code="22" name="Net-(JP1-Pad1)">
+      <node ref="JP1" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="23" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="JP1" pin="2"/>
+    </net>
+    <net code="24" name="/PGC">
+      <node ref="IC2" pin="12"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="25" name="/PGD">
+      <node ref="IC2" pin="13"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="26" name="Net-(IC4-Pad3)">
+      <node ref="IC4" pin="3"/>
+    </net>
+    <net code="27" name="Net-(IC3-Pad6)">
+      <node ref="R3" pin="2"/>
+      <node ref="IC3" pin="6"/>
+    </net>
+    <net code="28" name="Net-(IC3-Pad3)">
+      <node ref="IC3" pin="3"/>
+    </net>
+  </nets>
+</export>

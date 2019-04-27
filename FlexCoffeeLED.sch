@@ -163,7 +163,7 @@ L device:C C5
 U 1 1 5CAE26AD
 P 2750 1600
 F 0 "C5" H 2865 1646 50  0000 L CNN
-F 1 "15pF" H 2865 1555 50  0000 L CNN
+F 1 "0.1uF" H 2865 1555 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 2788 1450 50  0001 C CNN
 F 3 "~" H 2750 1600 50  0001 C CNN
 	1    2750 1600
@@ -188,7 +188,7 @@ L device:C C3
 U 1 1 5CAE7A91
 P 1550 1600
 F 0 "C3" H 1665 1646 50  0000 L CNN
-F 1 "15pF" H 1665 1555 50  0000 L CNN
+F 1 "0.1uF" H 1665 1555 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1588 1450 50  0001 C CNN
 F 3 "~" H 1550 1600 50  0001 C CNN
 	1    1550 1600
@@ -314,9 +314,8 @@ F 3 "https://www.mouser.co.uk/datasheet/2/302/LM75B-1126491.pdf" H 8900 4050 50 
 F 4 "NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8" H 8900 3950 50  0001 L CNN "Description"
 F 5 "1.1" H 8900 3850 50  0001 L CNN "Height"
 F 6 "771-LM75BDP" H 8900 3750 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 8900 3650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "NXP" H 8900 3550 50  0001 L CNN "Manufacturer_Name"
-F 9 "LM75BDP,118" H 8900 3450 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "NXP" H 8900 3550 50  0001 L CNN "Manufacturer_Name"
+F 8 "LM75BDP,118" H 8900 3450 50  0001 L CNN "Manufacturer_Part_Number"
 	1    8050 4050
 	1    0    0    -1  
 $EndComp
@@ -331,9 +330,8 @@ F 3 "https://www.mouser.co.uk/datasheet/2/302/LM75B-1126491.pdf" H 8900 4850 50 
 F 4 "NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8" H 8900 4750 50  0001 L CNN "Description"
 F 5 "1.1" H 8900 4650 50  0001 L CNN "Height"
 F 6 "771-LM75BDP" H 8900 4550 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 8900 4450 50  0001 L CNN "Mouser Price/Stock"
-F 8 "NXP" H 8900 4350 50  0001 L CNN "Manufacturer_Name"
-F 9 "LM75BDP,118" H 8900 4250 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "NXP" H 8900 4350 50  0001 L CNN "Manufacturer_Name"
+F 8 "LM75BDP,118" H 8900 4250 50  0001 L CNN "Manufacturer_Part_Number"
 	1    8050 4850
 	1    0    0    -1  
 $EndComp
@@ -348,9 +346,8 @@ F 3 "https://www.mouser.co.uk/datasheet/2/302/LM75B-1126491.pdf" H 8900 5650 50 
 F 4 "NXP - LM75BDP,118 - TEMPERATURE SENSOR, 3DEG CEL, TSSOP-8" H 8900 5550 50  0001 L CNN "Description"
 F 5 "1.1" H 8900 5450 50  0001 L CNN "Height"
 F 6 "771-LM75BDP" H 8900 5350 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 8900 5250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "NXP" H 8900 5150 50  0001 L CNN "Manufacturer_Name"
-F 9 "LM75BDP,118" H 8900 5050 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "NXP" H 8900 5150 50  0001 L CNN "Manufacturer_Name"
+F 8 "LM75BDP,118" H 8900 5050 50  0001 L CNN "Manufacturer_Part_Number"
 	1    8050 5650
 	1    0    0    -1  
 $EndComp
@@ -659,7 +656,7 @@ L device:C C1
 U 1 1 5CC0BCF8
 P 3850 1600
 F 0 "C1" H 3965 1646 50  0000 L CNN
-F 1 "15pF" H 3965 1555 50  0000 L CNN
+F 1 "0.1uF" H 3965 1555 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 3888 1450 50  0001 C CNN
 F 3 "~" H 3850 1600 50  0001 C CNN
 	1    3850 1600
@@ -725,7 +722,7 @@ L device:C C4
 U 1 1 5CC0E362
 P 4950 1600
 F 0 "C4" H 5065 1646 50  0000 L CNN
-F 1 "15pF" H 5065 1555 50  0000 L CNN
+F 1 "0.1uF" H 5065 1555 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 4988 1450 50  0001 C CNN
 F 3 "~" H 4950 1600 50  0001 C CNN
 	1    4950 1600
@@ -791,7 +788,7 @@ L device:C C6
 U 1 1 5CC107E4
 P 6050 1600
 F 0 "C6" H 6165 1646 50  0000 L CNN
-F 1 "15pF" H 6165 1555 50  0000 L CNN
+F 1 "0.1uF" H 6165 1555 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 6088 1450 50  0001 C CNN
 F 3 "~" H 6050 1600 50  0001 C CNN
 	1    6050 1600
@@ -857,7 +854,7 @@ L device:C C7
 U 1 1 5CC12666
 P 7150 1600
 F 0 "C7" H 7265 1646 50  0000 L CNN
-F 1 "15pF" H 7265 1555 50  0000 L CNN
+F 1 "0.1uF" H 7265 1555 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 7188 1450 50  0001 C CNN
 F 3 "~" H 7150 1600 50  0001 C CNN
 	1    7150 1600
@@ -932,10 +929,8 @@ F 2 "SOP65P640X120-14N" H 4550 4350 50  0001 L CNN
 F 3 "https://mouser.componentsearchengine.com/Datasheets/1/PIC16F18426-I_ST.pdf" H 4550 4250 50  0001 L CNN
 F 4 "8-bit Microcontrollers - MCU 28KB, 2KB RAM, 2xPWMs, Comparator, DAC, 12-bit ADCC, CWG,  EUSART, SPI/I2C" H 4550 4150 50  0001 L CNN "Description"
 F 5 "1.2" H 4550 4050 50  0001 L CNN "Height"
-F 6 "" H 4550 3950 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 4550 3850 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Microchip" H 4550 3750 50  0001 L CNN "Manufacturer_Name"
-F 9 "PIC16F18426-I/ST" H 4550 3650 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "Microchip" H 4550 3750 50  0001 L CNN "Manufacturer_Name"
+F 7 "PIC16F18426-I/ST" H 4550 3650 50  0001 L CNN "Manufacturer_Part_Number"
 	1    2800 4250
 	1    0    0    -1  
 $EndComp
