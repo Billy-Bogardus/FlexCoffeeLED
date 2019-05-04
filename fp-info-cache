@@ -1,4 +1,4 @@
-156810174179640
+160036014769590
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -21497,6 +21497,13 @@ LED_1411_RGB_SMD
 4
 4
 Footprints
+photo
+
+
+0
+0
+0
+Footprints
 RJ12_E_Prelim
 
 
@@ -21517,6 +21524,13 @@ SOT-23
 0
 3
 3
+Footprints
+Windmill
+
+
+0
+0
+0
 Fuse_Holders_and_Fuses
 BladeFuse-CarType
 
@@ -42720,6 +42734,13 @@ Integrated Circuit
 0
 8
 8
+SamacSys_Parts
+SOP65P640X120-14N
+TSSOP
+Integrated Circuit
+0
+14
+14
 SamacSys_Parts
 SOT95P280X100-5N
 NCP718ASN330T1G
