@@ -17661,7 +17661,7 @@ void WS_Word(char A, char B, char C)
 
 
 int Bx = 0;
-for(int i=0; i!=24; i++)
+for(int i=23; i!=-1; i--)
 {
 if(i>15)
 {
@@ -17691,16 +17691,22 @@ void WS_Write( int A )
 if(A)
 {
 LATAbits.LATA2 = 1;
-_delay((unsigned long)((0.800)*(32000000/4000.0)));
+__nop();
+__nop();
+__nop();
+
 LATAbits.LATA2 = 0;
-_delay((unsigned long)((0.450)*(32000000/4000.0)));
+
 }
 else
 {
 LATAbits.LATA2 = 1;
-_delay((unsigned long)((0.400)*(32000000/4000.0)));
+
 LATAbits.LATA2 = 0;
-_delay((unsigned long)((0.850)*(32000000/4000.0)));
+__nop();
+__nop();
+__nop();
+
 }
 
 }
@@ -17710,33 +17716,39 @@ _delay((unsigned long)((0.850)*(32000000/4000.0)));
 void WSLoop(void)
 {
 
-WS_Word(0xFF, 0x00, 0x00);
-WS_Word(0x00, 0xFF, 0x00);
-WS_Word(0x00, 0x00, 0xFF);
 
 
-_delay((unsigned long)((50.000)*(32000000/4000.0)));
-WS_Word(0xFF, 0xFF, 0xFF);
-WS_Word(0xFF, 0xFF, 0xFF);
-WS_Word(0x00, 0x00, 0x00);
+
+WS_Word(0x05, 0x00, 0x00);
+WS_Word(0x00, 0x05, 0x00);
+WS_Word(0x00, 0x00, 0x05);
+WS_Word(0x05, 0x05, 0x05);
+WS_Word(0x05, 0x00, 0x05);
+WS_Word(0x00, 0x05, 0x05);
 
 
-_delay((unsigned long)((50.000)*(32000000/4000.0)));
+
+_delay((unsigned long)((60.000)*(32000000/4000.0)));
+
+
+
 }
 
-# 137
+# 147
 void main(void)
 {
 
 SYSTEM_Initialize();
 
-# 157
+# 167
 while (1)
 {
-
+GIE = 0;
 
 WSLoop();
 
+
+GIE =1;
 }
 }
 

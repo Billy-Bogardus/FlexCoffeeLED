@@ -48,7 +48,7 @@
 #include <stdint.h>
 #define _XTAL_FREQ 32000000
 
-#define WSReset 50.000 //Time in milli Seconds
+#define WSReset 60.000 //Time in milli Seconds
 #define WSPulse0H 0.400
 #define WSPulse0L 0.850
 #define WSPulse1H 0.800
@@ -68,7 +68,7 @@ void WS_Word(char A, char B, char C)
    ///01234567  01234567  01234567
     
     int Bx = 0;
-    for(int i=0; i!=24; i++)
+    for(int i=23; i!=-1; i--)
     {
         if(i>15)
         {
@@ -98,16 +98,22 @@ void WS_Write( int A )
     if(A)
     {
         LATAbits.LATA2 = 1;
-        __delay_ms(WSPulse1H);
+        NOP();
+        NOP();
+        NOP();
+        ///__delay_ms(WSPulse1H);
         LATAbits.LATA2 = 0;
-        __delay_ms(WSPulse1L);
+        ///__delay_ms(WSPulse1L);
     }
     else
     {
         LATAbits.LATA2 = 1;
-        __delay_ms(WSPulse0H);
+        ///__delay_ms(WSPulse0H);
         LATAbits.LATA2 = 0;
-        __delay_ms(WSPulse0L);
+        NOP();
+        NOP();
+        NOP();
+        ///__delay_ms(WSPulse0L);
     }
     
 }
@@ -117,18 +123,22 @@ void WS_Write( int A )
 void WSLoop(void)
 {
 ///    __delay_ns();
-    WS_Word(0xFF, 0x00, 0x00); //Red
-    WS_Word(0x00, 0xFF, 0x00); //Green
-    WS_Word(0x00, 0x00, 0xFF); //Blue
+    
+    
+    
+    WS_Word(0x05, 0x00, 0x00); //Red
+    WS_Word(0x00, 0x05, 0x00); //Green
+    WS_Word(0x00, 0x00, 0x05); //Blue
+    WS_Word(0x05, 0x05, 0x05); //Red
+    WS_Word(0x05, 0x00, 0x05); //Green
+    WS_Word(0x00, 0x05, 0x05); //Blue
+    
     
     //delay
     __delay_ms(WSReset);
-    WS_Word(0xFF, 0xFF, 0xFF); //Red
-    WS_Word(0xFF, 0xFF, 0xFF); //Green
-    WS_Word(0x00, 0x00, 0x00); //Blue
     
     //delay
-    __delay_ms(WSReset);
+    //__delay_ms(WSReset);
 }
 
 /*
@@ -156,10 +166,12 @@ void main(void)
 
     while (1)
     {
-        
+        GIE = 0;
         //LATAbits.LATA2 = 0;
         WSLoop();//try my code
         // Add your application code
+        
+        GIE =1;
     }
 }
 /**

@@ -13,26 +13,26 @@
 %PSECTS
 $dist/default/production\Code.production.o
 cinit CODE 0 19 19 11 2
-text1 CODE 0 1C4 1C4 55 2
-text2 CODE 0 160 160 64 2
-text3 CODE 0 219 219 31 2
-text4 CODE 0 2AE 2AE C 2
-text5 CODE 0 2BA 2BA A 2
-text6 CODE 0 24A 24A 24 2
-text7 CODE 0 2C4 2C4 9 2
-text8 CODE 0 26E 26E 19 2
+text1 CODE 0 1C7 1C7 4D 2
+text2 CODE 0 160 160 67 2
+text3 CODE 0 268 268 12 2
+text4 CODE 0 28A 28A C 2
+text5 CODE 0 296 296 A 2
+text6 CODE 0 214 214 24 2
+text7 CODE 0 2A9 2A9 9 2
+text8 CODE 0 238 238 19 2
 text10 CODE 0 2A 2A 136 2
-text11 CODE 0 287 287 17 2
-text12 CODE 0 29E 29E 10 2
-text13 CODE 0 2DA 2DA 3 2
-maintext CODE 0 2CD 2CD 7 2
+text11 CODE 0 251 251 17 2
+text12 CODE 0 27A 27A 10 2
+text13 CODE 0 2B8 2B8 3 2
+maintext CODE 0 2A0 2A0 9 2
 cstackCOMMON COMMON 1 76 76 6 1
-cstackBANK0 BANK0 1 20 20 15 1
+cstackBANK0 BANK0 1 20 20 14 1
 intentry CODE 0 4 4 13 2
-bssBANK0 BANK0 1 35 35 13 1
-clrtext CODE 0 2D4 2D4 6 2
+bssBANK0 BANK0 1 34 34 13 1
+clrtext CODE 0 2B2 2B2 6 2
 bssCOMMON COMMON 1 70 70 6 1
-$C:\Users\Bill\AppData\Local\Temp\s9dc.o
+$C:\Users\Bill\AppData\Local\Temp\s418.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 17 17 2 2
 config CONFIG 0 8007 8007 5 2
@@ -42,7 +42,7 @@ config CONFIG 0 8007 8007 5 2
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 48-6F 1
+RAM 47-6F 1
 RAM A0-EF 1
 RAM 120-16F 1
 RAM 1A0-1EF 1
@@ -68,7 +68,7 @@ RAM B20-B6F 1
 RAM BA0-BEF 1
 RAM C20-C6F 1
 RAM CA0-CBF 1
-BANK0 48-6F 1
+BANK0 47-6F 1
 BANK1 A0-EF 1
 BANK2 120-16F 1
 BANK3 1A0-1EF 1
@@ -79,9 +79,9 @@ BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
 CONST 2-3 2
-CONST 2DD-3FFF 2
+CONST 2BB-3FFF 2
 ENTRY 2-3 2
-ENTRY 2DD-3FFF 2
+ENTRY 2BB-3FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -137,9 +137,9 @@ SFR60 1E00-1E6F 1
 SFR61 1E80-1EEF 1
 SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
-STACK 2028-27EF 1
+STACK 2027-27EF 1
 CODE 2-3 2
-CODE 2DD-3FFF 2
+CODE 2BB-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -170,9 +170,9 @@ BIGRAM 2000-27EF 1
 COMMON 7C-7D 1
 EEDATA F000-F0FF 2
 STRCODE 2-3 2
-STRCODE 2DD-3FFF 2
+STRCODE 2BB-3FFF 2
 STRING 2-3 2
-STRING 2DD-3FFF 2
+STRING 2BB-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -187,24 +187,24 @@ STRING 2DD-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Code.production.o
-19 cinit CODE >5461:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-19 cinit CODE >5464:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-19 cinit CODE >5524:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-1A cinit CODE >5525:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-1B cinit CODE >5526:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-1C cinit CODE >5527:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-1D cinit CODE >5528:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-1E cinit CODE >5529:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-1F cinit CODE >5533:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-20 cinit CODE >5534:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-21 cinit CODE >5535:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-22 cinit CODE >5536:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-23 cinit CODE >5537:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-24 cinit CODE >5538:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-26 cinit CODE >5544:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-26 cinit CODE >5546:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-27 cinit CODE >5547:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-28 cinit CODE >5548:C:\Users\Bill\AppData\Local\Temp\s9dc.s
+19 cinit CODE >5463:C:\Users\Bill\AppData\Local\Temp\s418.s
+19 cinit CODE >5466:C:\Users\Bill\AppData\Local\Temp\s418.s
+19 cinit CODE >5526:C:\Users\Bill\AppData\Local\Temp\s418.s
+1A cinit CODE >5527:C:\Users\Bill\AppData\Local\Temp\s418.s
+1B cinit CODE >5528:C:\Users\Bill\AppData\Local\Temp\s418.s
+1C cinit CODE >5529:C:\Users\Bill\AppData\Local\Temp\s418.s
+1D cinit CODE >5530:C:\Users\Bill\AppData\Local\Temp\s418.s
+1E cinit CODE >5531:C:\Users\Bill\AppData\Local\Temp\s418.s
+1F cinit CODE >5535:C:\Users\Bill\AppData\Local\Temp\s418.s
+20 cinit CODE >5536:C:\Users\Bill\AppData\Local\Temp\s418.s
+21 cinit CODE >5537:C:\Users\Bill\AppData\Local\Temp\s418.s
+22 cinit CODE >5538:C:\Users\Bill\AppData\Local\Temp\s418.s
+23 cinit CODE >5539:C:\Users\Bill\AppData\Local\Temp\s418.s
+24 cinit CODE >5540:C:\Users\Bill\AppData\Local\Temp\s418.s
+26 cinit CODE >5546:C:\Users\Bill\AppData\Local\Temp\s418.s
+26 cinit CODE >5548:C:\Users\Bill\AppData\Local\Temp\s418.s
+27 cinit CODE >5549:C:\Users\Bill\AppData\Local\Temp\s418.s
+28 cinit CODE >5550:C:\Users\Bill\AppData\Local\Temp\s418.s
 4 intentry CODE >52:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/interrupt_manager.c
 6 intentry CODE >55:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/interrupt_manager.c
 8 intentry CODE >57:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/interrupt_manager.c
@@ -213,23 +213,23 @@ F intentry CODE >60:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated
 10 intentry CODE >61:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/interrupt_manager.c
 13 intentry CODE >63:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/interrupt_manager.c
 15 intentry CODE >74:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/interrupt_manager.c
-2DA text13 CODE >742:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-2DA text13 CODE >745:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-2DC text13 CODE >746:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-29E text12 CODE >565:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-29E text12 CODE >569:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-2A2 text12 CODE >572:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-2A6 text12 CODE >574:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-2AA text12 CODE >575:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-2AB text12 CODE >576:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-2AB text12 CODE >578:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-2AD text12 CODE >581:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-287 text11 CODE >583:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-288 text11 CODE >586:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-28A text11 CODE >589:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-291 text11 CODE >592:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-29C text11 CODE >596:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-29D text11 CODE >598:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+2B8 text13 CODE >742:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+2B8 text13 CODE >745:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+2BA text13 CODE >746:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+27A text12 CODE >565:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+27A text12 CODE >569:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+27E text12 CODE >572:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+282 text12 CODE >574:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+286 text12 CODE >575:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+287 text12 CODE >576:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+287 text12 CODE >578:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+289 text12 CODE >581:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+251 text11 CODE >583:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+252 text11 CODE >586:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+254 text11 CODE >589:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+25B text11 CODE >592:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+266 text11 CODE >596:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+267 text11 CODE >598:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
 2A text10 CODE >235:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
 2A text10 CODE >243:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
 2C text10 CODE >247:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
@@ -322,113 +322,115 @@ FF text10 CODE >491:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated
 13B text10 CODE >560:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
 13C text10 CODE >261:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
 15F text10 CODE >563:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-26E text8 CODE >198:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-26E text8 CODE >200:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-273 text8 CODE >201:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-277 text8 CODE >202:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-278 text8 CODE >203:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-279 text8 CODE >205:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-27A text8 CODE >208:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-27C text8 CODE >210:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-27E text8 CODE >212:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-27F text8 CODE >214:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-281 text8 CODE >217:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-283 text8 CODE >218:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-284 text8 CODE >221:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-285 text8 CODE >222:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-286 text8 CODE >224:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
-2C4 text7 CODE >58:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2C4 text7 CODE >61:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2C7 text7 CODE >63:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2C8 text7 CODE >65:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2C9 text7 CODE >67:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2CB text7 CODE >69:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2CC text7 CODE >70:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-24A text6 CODE >55:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-24A text6 CODE >60:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-24C text6 CODE >61:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-24D text6 CODE >66:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-24F text6 CODE >67:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-251 text6 CODE >72:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-254 text6 CODE >73:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-256 text6 CODE >78:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-257 text6 CODE >79:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-258 text6 CODE >84:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-259 text6 CODE >85:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-25A text6 CODE >90:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-25C text6 CODE >91:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-25E text6 CODE >96:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-260 text6 CODE >97:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-262 text6 CODE >106:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-264 text6 CODE >107:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-267 text6 CODE >108:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-26A text6 CODE >109:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-26D text6 CODE >110:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
-2BA text5 CODE >72:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2BA text5 CODE >75:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2BC text5 CODE >77:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2BD text5 CODE >79:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2BE text5 CODE >81:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2BF text5 CODE >83:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2C0 text5 CODE >85:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2C1 text5 CODE >87:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2C2 text5 CODE >89:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2C3 text5 CODE >90:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2AE text4 CODE >50:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2AE text4 CODE >52:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2B1 text4 CODE >53:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2B4 text4 CODE >54:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2B7 text4 CODE >55:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-2B9 text4 CODE >56:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
-219 text3 CODE >96:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-219 text3 CODE >98:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-21E text3 CODE >100:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-21F text3 CODE >101:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-228 text3 CODE >102:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-22A text3 CODE >103:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-233 text3 CODE >104:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-234 text3 CODE >105:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-234 text3 CODE >107:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-235 text3 CODE >108:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-23E text3 CODE >109:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-240 text3 CODE >110:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-249 text3 CODE >113:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+238 text8 CODE >198:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+238 text8 CODE >200:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+23D text8 CODE >201:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+241 text8 CODE >202:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+242 text8 CODE >203:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+243 text8 CODE >205:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+244 text8 CODE >208:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+246 text8 CODE >210:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+248 text8 CODE >212:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+249 text8 CODE >214:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+24B text8 CODE >217:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+24D text8 CODE >218:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+24E text8 CODE >221:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+24F text8 CODE >222:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+250 text8 CODE >224:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/i2c1.c
+2A9 text7 CODE >58:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+2A9 text7 CODE >61:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+2AC text7 CODE >63:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+2AD text7 CODE >65:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+2AE text7 CODE >67:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+2B0 text7 CODE >69:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+2B1 text7 CODE >70:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+214 text6 CODE >55:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+214 text6 CODE >60:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+216 text6 CODE >61:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+217 text6 CODE >66:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+219 text6 CODE >67:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+21B text6 CODE >72:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+21E text6 CODE >73:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+220 text6 CODE >78:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+221 text6 CODE >79:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+222 text6 CODE >84:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+223 text6 CODE >85:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+224 text6 CODE >90:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+226 text6 CODE >91:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+228 text6 CODE >96:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+22A text6 CODE >97:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+22C text6 CODE >106:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+22E text6 CODE >107:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+231 text6 CODE >108:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+234 text6 CODE >109:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+237 text6 CODE >110:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/pin_manager.c
+296 text5 CODE >72:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+296 text5 CODE >75:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+298 text5 CODE >77:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+299 text5 CODE >79:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+29A text5 CODE >81:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+29B text5 CODE >83:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+29C text5 CODE >85:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+29D text5 CODE >87:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+29E text5 CODE >89:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+29F text5 CODE >90:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+28A text4 CODE >50:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+28A text4 CODE >52:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+28D text4 CODE >53:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+290 text4 CODE >54:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+293 text4 CODE >55:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+295 text4 CODE >56:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/mcc.c
+268 text3 CODE >96:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+268 text3 CODE >98:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+26D text3 CODE >100:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+26E text3 CODE >101:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+26F text3 CODE >102:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+270 text3 CODE >103:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+271 text3 CODE >105:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+273 text3 CODE >107:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+274 text3 CODE >108:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+274 text3 CODE >110:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+275 text3 CODE >112:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+276 text3 CODE >113:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+277 text3 CODE >114:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+278 text3 CODE >115:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+279 text3 CODE >119:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
 160 text2 CODE >64:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
 162 text2 CODE >71:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-164 text2 CODE >73:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-16F text2 CODE >75:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-176 text2 CODE >76:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-17E text2 CODE >78:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-189 text2 CODE >80:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-190 text2 CODE >81:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-198 text2 CODE >83:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-19B text2 CODE >85:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-19F text2 CODE >86:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-1AE text2 CODE >90:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-1B2 text2 CODE >92:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-1B9 text2 CODE >71:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-1C4 text1 CODE >117:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-1C4 text1 CODE >120:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-1CB text1 CODE >121:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-1D5 text1 CODE >122:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-1DF text1 CODE >125:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-1EB text1 CODE >126:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-1F8 text1 CODE >127:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-205 text1 CODE >128:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-20C text1 CODE >131:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-218 text1 CODE >132:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-2CD maintext CODE >137:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-2CD maintext CODE >140:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-2D0 maintext CODE >157:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-2D0 maintext CODE >161:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-2D4 clrtext CODE >5513:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-2D4 clrtext CODE >5514:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-2D5 clrtext CODE >5515:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-2D5 clrtext CODE >5516:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-2D6 clrtext CODE >5517:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-2D7 clrtext CODE >5518:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-2D8 clrtext CODE >5519:C:\Users\Bill\AppData\Local\Temp\s9dc.s
-2D9 clrtext CODE >5520:C:\Users\Bill\AppData\Local\Temp\s9dc.s
+166 text2 CODE >73:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+171 text2 CODE >75:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+178 text2 CODE >76:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+180 text2 CODE >78:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+18B text2 CODE >80:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+192 text2 CODE >81:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+19A text2 CODE >83:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+19D text2 CODE >85:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1A1 text2 CODE >86:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1B0 text2 CODE >90:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1B4 text2 CODE >92:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1BB text2 CODE >71:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1C7 text1 CODE >123:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1C7 text1 CODE >129:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1CE text1 CODE >130:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1D8 text1 CODE >131:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1E2 text1 CODE >132:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1EF text1 CODE >133:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+1F9 text1 CODE >134:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+206 text1 CODE >138:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+213 text1 CODE >142:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+2A0 maintext CODE >147:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+2A0 maintext CODE >150:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+2A3 maintext CODE >169:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+2A4 maintext CODE >171:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+2A7 maintext CODE >174:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
+2B2 clrtext CODE >5515:C:\Users\Bill\AppData\Local\Temp\s418.s
+2B2 clrtext CODE >5516:C:\Users\Bill\AppData\Local\Temp\s418.s
+2B3 clrtext CODE >5517:C:\Users\Bill\AppData\Local\Temp\s418.s
+2B3 clrtext CODE >5518:C:\Users\Bill\AppData\Local\Temp\s418.s
+2B4 clrtext CODE >5519:C:\Users\Bill\AppData\Local\Temp\s418.s
+2B5 clrtext CODE >5520:C:\Users\Bill\AppData\Local\Temp\s418.s
+2B6 clrtext CODE >5521:C:\Users\Bill\AppData\Local\Temp\s418.s
+2B7 clrtext CODE >5522:C:\Users\Bill\AppData\Local\Temp\s418.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -442,7 +444,7 @@ FF text10 CODE >491:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 3 0 ABS 0 - dist/default/production\Code.production.o
-_I2C1_Initialize 4DC 0 CODE 0 text8 dist/default/production\Code.production.o
+_I2C1_Initialize 470 0 CODE 0 text8 dist/default/production\Code.production.o
 __Hspace_0 800C 0 ABS 0 - -
 __Hspace_1 7C 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
@@ -450,7 +452,7 @@ __Hspace_3 0 0 ABS 0 - -
 _p_i2c1_trb_current 71 0 COMMON 1 bssCOMMON dist/default/production\Code.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\Code.production.o
-_PMD_Initialize 574 0 CODE 0 text5 dist/default/production\Code.production.o
+_PMD_Initialize 52C 0 CODE 0 text5 dist/default/production\Code.production.o
 __Hstrings 0 0 ABS 0 strings -
 __CFG_WDTCCS$SC 0 0 ABS 0 - dist/default/production\Code.production.o
 _LATA 18 0 ABS 0 - dist/default/production\Code.production.o
@@ -465,68 +467,68 @@ _PMD6 79C 0 ABS 0 - dist/default/production\Code.production.o
 _PMD7 79D 0 ABS 0 - dist/default/production\Code.production.o
 _WPUA 1F39 0 ABS 0 - dist/default/production\Code.production.o
 _WPUC 1F4F 0 ABS 0 - dist/default/production\Code.production.o
-___sp 0 0 STACK 2 stack C:\Users\Bill\AppData\Local\Temp\s9dc.o
-_main 59A 0 CODE 0 maintext dist/default/production\Code.production.o
+___sp 0 0 STACK 2 stack C:\Users\Bill\AppData\Local\Temp\s418.o
+_main 540 0 CODE 0 maintext dist/default/production\Code.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Code.production.o
-start 2E 0 CODE 0 init C:\Users\Bill\AppData\Local\Temp\s9dc.o
+start 2E 0 CODE 0 init C:\Users\Bill\AppData\Local\Temp\s418.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Code.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __size_of_I2C1_ISR 0 0 ABS 0 - dist/default/production\Code.production.o
-I2C1_ISR@i2c_10bit_address_restart 3A 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
+I2C1_ISR@i2c_10bit_address_restart 39 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
 _p_i2c1_current 70 0 COMMON 1 bssCOMMON dist/default/production\Code.production.o
 _WS_Word 2C0 0 CODE 0 text2 dist/default/production\Code.production.o
 I2C1_ISR@i2c_address 74 0 COMMON 1 bssCOMMON dist/default/production\Code.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\Code.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s9dc.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s9dc.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s9dc.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s9dc.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s9dc.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s9dc.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s418.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s418.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s418.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s418.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s418.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s418.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
-I2C1_ISR@pi2c_buf_ptr 3C 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
-__end_of_WSLoop 432 0 CODE 0 text1 dist/default/production\Code.production.o
+I2C1_ISR@pi2c_buf_ptr 3B 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
+__end_of_WSLoop 428 0 CODE 0 text1 dist/default/production\Code.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Code.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-I2C1_ISR@i2c_bytes_left 3B 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
-__end_of_PMD_Initialize 588 0 CODE 0 text5 dist/default/production\Code.production.o
+I2C1_ISR@i2c_bytes_left 3A 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
+__end_of_PMD_Initialize 540 0 CODE 0 text5 dist/default/production\Code.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-__end_of_I2C1_FunctionComplete 55C 0 CODE 0 text12 dist/default/production\Code.production.o
+__end_of_I2C1_FunctionComplete 514 0 CODE 0 text12 dist/default/production\Code.production.o
 __size_of_WS_Write 0 0 ABS 0 - dist/default/production\Code.production.o
 _ANSELA 1F38 0 ABS 0 - dist/default/production\Code.production.o
 _ANSELC 1F4E 0 ABS 0 - dist/default/production\Code.production.o
 __size_of_I2C1_Initialize 0 0 ABS 0 - dist/default/production\Code.production.o
 _I2C1_ISR 54 0 CODE 0 text10 dist/default/production\Code.production.o
 __end_of_INTERRUPT_InterruptManager 2E 0 CODE 0 intentry dist/default/production\Code.production.o
-WS_Word@Bx 2F 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
+WS_Word@Bx 2E 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
 __end_of_I2C1_ISR 2C0 0 CODE 0 text10 dist/default/production\Code.production.o
-_I2C1_FunctionComplete 53C 0 CODE 0 text12 dist/default/production\Code.production.o
+_I2C1_FunctionComplete 4F4 0 CODE 0 text12 dist/default/production\Code.production.o
 __Lmaintext 0 0 ABS 0 maintext -
 WS_Write@A 20 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
 __CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
 _INLVLA 1F3C 0 ABS 0 - dist/default/production\Code.production.o
 _INLVLC 1F52 0 ABS 0 - dist/default/production\Code.production.o
-___stackhi 27EF 0 ABS 0 - C:\Users\Bill\AppData\Local\Temp\s9dc.o
-___stacklo 2028 0 ABS 0 - C:\Users\Bill\AppData\Local\Temp\s9dc.o
+___stackhi 27EF 0 ABS 0 - C:\Users\Bill\AppData\Local\Temp\s418.o
+___stacklo 2027 0 ABS 0 - C:\Users\Bill\AppData\Local\Temp\s418.o
 __CFG_SAFEN$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
 _i2c1_trb_count 72 0 COMMON 1 bssCOMMON dist/default/production\Code.production.o
-_PIN_MANAGER_Initialize 494 0 CODE 0 text6 dist/default/production\Code.production.o
-_WS_Write 432 0 CODE 0 text3 dist/default/production\Code.production.o
+_PIN_MANAGER_Initialize 428 0 CODE 0 text6 dist/default/production\Code.production.o
+_WS_Write 4D0 0 CODE 0 text3 dist/default/production\Code.production.o
 start_initialization 32 0 CODE 0 cinit dist/default/production\Code.production.o
 _ODCONA 1F3A 0 ABS 0 - dist/default/production\Code.production.o
 _ODCONC 1F50 0 ABS 0 - dist/default/production\Code.production.o
 _OSCFRQ 893 0 ABS 0 - dist/default/production\Code.production.o
 __CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/production\Code.production.o
-__end_of_WS_Write 494 0 CODE 0 text3 dist/default/production\Code.production.o
+__end_of_WS_Write 4F4 0 CODE 0 text3 dist/default/production\Code.production.o
 _RC0PPS 1F20 0 ABS 0 - dist/default/production\Code.production.o
 _RC1PPS 1F21 0 ABS 0 - dist/default/production\Code.production.o
-__end_of_SYSTEM_Initialize 574 0 CODE 0 text4 dist/default/production\Code.production.o
-clear_ram0 5A8 0 CODE 0 clrtext dist/default/production\Code.production.o
+__end_of_SYSTEM_Initialize 52C 0 CODE 0 text4 dist/default/production\Code.production.o
+clear_ram0 564 0 CODE 0 clrtext dist/default/production\Code.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
-I2C1_MasterRead@trBlock 3D 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
-_WSLoop 388 0 CODE 0 text1 dist/default/production\Code.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Bill\AppData\Local\Temp\s9dc.o
+I2C1_MasterRead@trBlock 3C 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
+_WSLoop 38E 0 CODE 0 text1 dist/default/production\Code.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Bill\AppData\Local\Temp\s418.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -758,36 +760,37 @@ __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 int$flags 7E 0 ABS 0 - dist/default/production\Code.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\Code.production.o
+_GIE 5F 0 ABS 0 - dist/default/production\Code.production.o
 __S0 800C 0 ABS 0 - -
 __S1 7C 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __size_of_WSLoop 0 0 ABS 0 - dist/default/production\Code.production.o
-__end_of_I2C1_BusCollisionISR 5BA 0 CODE 0 text13 dist/default/production\Code.production.o
-WS_Word@A 28 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
-WS_Word@B 23 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
-WS_Word@C 24 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
-WS_Word@i 31 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
-WS_Word@x 29 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
+__end_of_I2C1_BusCollisionISR 576 0 CODE 0 text13 dist/default/production\Code.production.o
+WS_Word@A 27 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
+WS_Word@B 22 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
+WS_Word@C 23 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
+WS_Word@i 30 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
+WS_Word@x 28 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
 __CFG_BBEN$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
 I2C1_Stop@completion_code 77 0 COMMON 1 cstackCOMMON dist/default/production\Code.production.o
-WS_Word@x_514 2B 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
-WS_Word@x_515 2D 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
-_SYSTEM_Initialize 55C 0 CODE 0 text4 dist/default/production\Code.production.o
+WS_Word@x_519 2A 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
+WS_Word@x_520 2C 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
+_SYSTEM_Initialize 514 0 CODE 0 text4 dist/default/production\Code.production.o
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Code.production.o
 __size_of_WS_Word 0 0 ABS 0 - dist/default/production\Code.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Bill\AppData\Local\Temp\s9dc.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Bill\AppData\Local\Temp\s418.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\Code.production.o
 _INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\Code.production.o
 __size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\Code.production.o
 _PIE3bits 719 0 ABS 0 - dist/default/production\Code.production.o
 __ptext10 54 0 CODE 0 text10 dist/default/production\Code.production.o
-__ptext11 50E 0 CODE 0 text11 dist/default/production\Code.production.o
-__ptext12 53C 0 CODE 0 text12 dist/default/production\Code.production.o
-__ptext13 5B4 0 CODE 0 text13 dist/default/production\Code.production.o
-__end_of_PIN_MANAGER_Initialize 4DC 0 CODE 0 text6 dist/default/production\Code.production.o
+__ptext11 4A2 0 CODE 0 text11 dist/default/production\Code.production.o
+__ptext12 4F4 0 CODE 0 text12 dist/default/production\Code.production.o
+__ptext13 570 0 CODE 0 text13 dist/default/production\Code.production.o
+__end_of_PIN_MANAGER_Initialize 470 0 CODE 0 text6 dist/default/production\Code.production.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -842,14 +845,14 @@ __Lbank60 0 0 BANK60 1 bank60 -
 __Lbank61 0 0 BANK61 1 bank61 -
 __Lbank62 0 0 BANK62 1 bank62 -
 __Lbank63 0 0 BANK63 1 bank63 -
-__pmaintext 59A 0 CODE 0 maintext dist/default/production\Code.production.o
+__pmaintext 540 0 CODE 0 maintext dist/default/production\Code.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production\Code.production.o
 __CFG_RSTOSC$HFINT1 0 0 ABS 0 - dist/default/production\Code.production.o
 __CFG_BBSIZE$BB512 0 0 ABS 0 - dist/default/production\Code.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 1000E 0 CONFIG 0 config -
-__end_of_I2C1_Stop 53C 0 CODE 0 text11 dist/default/production\Code.production.o
+__end_of_I2C1_Stop 4D0 0 CODE 0 text11 dist/default/production\Code.production.o
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
 _LATAbits 18 0 ABS 0 - dist/default/production\Code.production.o
@@ -861,7 +864,7 @@ _OSCCON1 88D 0 ABS 0 - dist/default/production\Code.production.o
 _OSCCON3 88F 0 ABS 0 - dist/default/production\Code.production.o
 _OSCTUNE 892 0 ABS 0 - dist/default/production\Code.production.o
 _SSP1DATPPS 1EC6 0 ABS 0 - dist/default/production\Code.production.o
-_I2C1_Stop 50E 0 CODE 0 text11 dist/default/production\Code.production.o
+_I2C1_Stop 4A2 0 CODE 0 text11 dist/default/production\Code.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
@@ -874,22 +877,22 @@ __Lend_init 2E 0 CODE 0 end_init -
 __CFG_LVP$ON 0 0 ABS 0 - dist/default/production\Code.production.o
 __CFG_CSWEN$ON 0 0 ABS 0 - dist/default/production\Code.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-I2C1_MasterWrite@trBlock 41 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
+I2C1_MasterWrite@trBlock 40 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
 end_of_initialization 4C 0 CODE 0 cinit dist/default/production\Code.production.o
 __Hintentry 2E 0 CODE 0 intentry -
-__end_of_WS_Word 388 0 CODE 0 text2 dist/default/production\Code.production.o
+__end_of_WS_Word 38E 0 CODE 0 text2 dist/default/production\Code.production.o
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\Code.production.o
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
-__ptext1 388 0 CODE 0 text1 dist/default/production\Code.production.o
+__ptext1 38E 0 CODE 0 text1 dist/default/production\Code.production.o
 __ptext2 2C0 0 CODE 0 text2 dist/default/production\Code.production.o
-__ptext3 432 0 CODE 0 text3 dist/default/production\Code.production.o
-__ptext4 55C 0 CODE 0 text4 dist/default/production\Code.production.o
-__ptext5 574 0 CODE 0 text5 dist/default/production\Code.production.o
-__ptext6 494 0 CODE 0 text6 dist/default/production\Code.production.o
-__ptext7 588 0 CODE 0 text7 dist/default/production\Code.production.o
-__ptext8 4DC 0 CODE 0 text8 dist/default/production\Code.production.o
+__ptext3 4D0 0 CODE 0 text3 dist/default/production\Code.production.o
+__ptext4 514 0 CODE 0 text4 dist/default/production\Code.production.o
+__ptext5 52C 0 CODE 0 text5 dist/default/production\Code.production.o
+__ptext6 428 0 CODE 0 text6 dist/default/production\Code.production.o
+__ptext7 552 0 CODE 0 text7 dist/default/production\Code.production.o
+__ptext8 470 0 CODE 0 text8 dist/default/production\Code.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 _i2c1_state 73 0 COMMON 1 bssCOMMON dist/default/production\Code.production.o
@@ -905,13 +908,13 @@ __CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 _SSP1CON1bits 190 0 ABS 0 - dist/default/production\Code.production.o
 _SSP1CON2bits 191 0 ABS 0 - dist/default/production\Code.production.o
-_i2c1_object 35 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
+_i2c1_object 34 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
 __pcstackCOMMON 76 0 COMMON 1 cstackCOMMON dist/default/production\Code.production.o
-__end_of_I2C1_Initialize 50E 0 CODE 0 text8 dist/default/production\Code.production.o
+__end_of_I2C1_Initialize 4A2 0 CODE 0 text8 dist/default/production\Code.production.o
 _SSP1ADD 18D 0 ABS 0 - dist/default/production\Code.production.o
 _SSP1BUF 18C 0 ABS 0 - dist/default/production\Code.production.o
 __Hend_init 32 0 CODE 0 end_init -
-__end_of_main 5A8 0 CODE 0 maintext dist/default/production\Code.production.o
+__end_of_main 552 0 CODE 0 maintext dist/default/production\Code.production.o
 __CFG_WRTSAF$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
 _OSCEN 891 0 ABS 0 - dist/default/production\Code.production.o
 _TRISA 12 0 ABS 0 - dist/default/production\Code.production.o
@@ -921,14 +924,14 @@ __Lram 0 0 ABS 0 ram -
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\Code.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\Code.production.o
 __CFG_ZCDDIS$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
-_I2C1_BusCollisionISR 5B4 0 CODE 0 text13 dist/default/production\Code.production.o
-__end_of_OSCILLATOR_Initialize 59A 0 CODE 0 text7 dist/default/production\Code.production.o
+_I2C1_BusCollisionISR 570 0 CODE 0 text13 dist/default/production\Code.production.o
+__end_of_OSCILLATOR_Initialize 564 0 CODE 0 text7 dist/default/production\Code.production.o
 __CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production\Code.production.o
 __initialization 32 0 CODE 0 cinit dist/default/production\Code.production.o
-_i2c1_tr_queue 45 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
+_i2c1_tr_queue 44 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
 __CFG_PWRTS$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
-__pbssBANK0 35 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
-_OSCILLATOR_Initialize 588 0 CODE 0 text7 dist/default/production\Code.production.o
+__pbssBANK0 34 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
+_OSCILLATOR_Initialize 552 0 CODE 0 text7 dist/default/production\Code.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -954,8 +957,8 @@ _OSCILLATOR_Initialize 588 0 CODE 0 text7 dist/default/production\Code.productio
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cstackBANK0 1 20 20 28 1
-intentry 0 4 8 2D9 2
+cstackBANK0 1 20 20 27 1
+intentry 0 4 8 2B7 2
 reset_vec 0 0 0 2 2
 bssCOMMON 1 70 70 C 1
 config 0 8007 1000E 5 2

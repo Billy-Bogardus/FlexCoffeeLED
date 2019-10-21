@@ -9,13 +9,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S35 . . ]
 "661
 [v _LATAbits `VS35 ~T0 @X0 0 e@24 ]
+"31 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
 [v F10169 `(v ~T0 @X0 1 tf1`ul ]
-"92 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic.h
+"92
 [v __delay `JF10169 ~T0 @X0 0 e ]
 [p i __delay ]
 [p mainexit ]
 "70 mcc_generated_files/mcc.h
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"32846 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f18426.h
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
 [; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
 [; ;xc.h: 20: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -11579,12 +11584,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _Bx `i ~T0 @X0 1 a ]
 [; ;main.c: 70: int Bx = 0;
 [e = _Bx -> 0 `i ]
-[; ;main.c: 71: for(int i=0; i!=24; i++)
+[; ;main.c: 71: for(int i=23; i!=-1; i--)
 "71
 {
 [v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ != _i -> 24 `i 1423  ]
+[e = _i -> 23 `i ]
+[e $ != _i -U -> 1 `i 1423  ]
 [e $U 1424  ]
 "72
 [e :U 1423 ]
@@ -11664,8 +11669,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 "93
 }
 "71
-[e ++ _i -> 1 `i ]
-[e $ != _i -> 24 `i 1423  ]
+[e -- _i -> 1 `i ]
+[e $ != _i -U -> 1 `i 1423  ]
 [e :U 1424 ]
 "93
 }
@@ -11694,110 +11699,119 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 100: LATAbits.LATA2 = 1;
 "100
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 101: _delay((unsigned long)((0.800)*(32000000/4000.0)));
+[; ;main.c: 101: __nop();
 "101
-[e ( __delay (1 -> * .0.800 / -> -> 32000000 `l `d .4000.0 `ul ]
-[; ;main.c: 102: LATAbits.LATA2 = 0;
+[e ( ___nop ..  ]
+[; ;main.c: 102: __nop();
 "102
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 103: _delay((unsigned long)((0.450)*(32000000/4000.0)));
+[e ( ___nop ..  ]
+[; ;main.c: 103: __nop();
 "103
-[e ( __delay (1 -> * .0.450 / -> -> 32000000 `l `d .4000.0 `ul ]
-"104
-}
-[; ;main.c: 104: }
-[e $U 1434  ]
+[e ( ___nop ..  ]
+[; ;main.c: 105: LATAbits.LATA2 = 0;
 "105
-[e :U 1433 ]
-[; ;main.c: 105: else
-[; ;main.c: 106: {
-"106
-{
-[; ;main.c: 107: LATAbits.LATA2 = 1;
-"107
-[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 108: _delay((unsigned long)((0.400)*(32000000/4000.0)));
-"108
-[e ( __delay (1 -> * .0.400 / -> -> 32000000 `l `d .4000.0 `ul ]
-[; ;main.c: 109: LATAbits.LATA2 = 0;
-"109
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 110: _delay((unsigned long)((0.850)*(32000000/4000.0)));
+"107
+}
+[; ;main.c: 107: }
+[e $U 1434  ]
+"108
+[e :U 1433 ]
+[; ;main.c: 108: else
+[; ;main.c: 109: {
+"109
+{
+[; ;main.c: 110: LATAbits.LATA2 = 1;
 "110
-[e ( __delay (1 -> * .0.850 / -> -> 32000000 `l `d .4000.0 `ul ]
-"111
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 112: LATAbits.LATA2 = 0;
+"112
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 113: __nop();
+"113
+[e ( ___nop ..  ]
+[; ;main.c: 114: __nop();
+"114
+[e ( ___nop ..  ]
+[; ;main.c: 115: __nop();
+"115
+[e ( ___nop ..  ]
+"117
 }
 [e :U 1434 ]
-[; ;main.c: 111: }
-[; ;main.c: 113: }
-"113
+[; ;main.c: 117: }
+[; ;main.c: 119: }
+"119
 [e :UE 1432 ]
 }
-"117
+"123
 [v _WSLoop `(v ~T0 @X0 1 ef ]
-"118
+"124
 {
-[; ;main.c: 117: void WSLoop(void)
-[; ;main.c: 118: {
+[; ;main.c: 123: void WSLoop(void)
+[; ;main.c: 124: {
 [e :U _WSLoop ]
 [f ]
-[; ;main.c: 120: WS_Word(0xFF, 0x00, 0x00);
-"120
-[e ( _WS_Word (3 , , -> -> 255 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
-[; ;main.c: 121: WS_Word(0x00, 0xFF, 0x00);
-"121
-[e ( _WS_Word (3 , , -> -> 0 `i `uc -> -> 255 `i `uc -> -> 0 `i `uc ]
-[; ;main.c: 122: WS_Word(0x00, 0x00, 0xFF);
-"122
-[e ( _WS_Word (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 255 `i `uc ]
-[; ;main.c: 125: _delay((unsigned long)((50.000)*(32000000/4000.0)));
-"125
-[e ( __delay (1 -> * .50.000 / -> -> 32000000 `l `d .4000.0 `ul ]
-[; ;main.c: 126: WS_Word(0xFF, 0xFF, 0xFF);
-"126
-[e ( _WS_Word (3 , , -> -> 255 `i `uc -> -> 255 `i `uc -> -> 255 `i `uc ]
-[; ;main.c: 127: WS_Word(0xFF, 0xFF, 0xFF);
-"127
-[e ( _WS_Word (3 , , -> -> 255 `i `uc -> -> 255 `i `uc -> -> 255 `i `uc ]
-[; ;main.c: 128: WS_Word(0x00, 0x00, 0x00);
-"128
-[e ( _WS_Word (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
-[; ;main.c: 131: _delay((unsigned long)((50.000)*(32000000/4000.0)));
+[; ;main.c: 129: WS_Word(0x05, 0x00, 0x00);
+"129
+[e ( _WS_Word (3 , , -> -> 5 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 130: WS_Word(0x00, 0x05, 0x00);
+"130
+[e ( _WS_Word (3 , , -> -> 0 `i `uc -> -> 5 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 131: WS_Word(0x00, 0x00, 0x05);
 "131
-[e ( __delay (1 -> * .50.000 / -> -> 32000000 `l `d .4000.0 `ul ]
-[; ;main.c: 132: }
+[e ( _WS_Word (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 5 `i `uc ]
+[; ;main.c: 132: WS_Word(0x05, 0x05, 0x05);
 "132
+[e ( _WS_Word (3 , , -> -> 5 `i `uc -> -> 5 `i `uc -> -> 5 `i `uc ]
+[; ;main.c: 133: WS_Word(0x05, 0x00, 0x05);
+"133
+[e ( _WS_Word (3 , , -> -> 5 `i `uc -> -> 0 `i `uc -> -> 5 `i `uc ]
+[; ;main.c: 134: WS_Word(0x00, 0x05, 0x05);
+"134
+[e ( _WS_Word (3 , , -> -> 0 `i `uc -> -> 5 `i `uc -> -> 5 `i `uc ]
+[; ;main.c: 138: _delay((unsigned long)((60.000)*(32000000/4000.0)));
+"138
+[e ( __delay (1 -> * .60.000 / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;main.c: 142: }
+"142
 [e :UE 1435 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"137
+"147
 [v _main `(v ~T0 @X0 1 ef ]
-"138
+"148
 {
-[; ;main.c: 137: void main(void)
-[; ;main.c: 138: {
+[; ;main.c: 147: void main(void)
+[; ;main.c: 148: {
 [e :U _main ]
 [f ]
-[; ;main.c: 140: SYSTEM_Initialize();
-"140
+[; ;main.c: 150: SYSTEM_Initialize();
+"150
 [e ( _SYSTEM_Initialize ..  ]
-[; ;main.c: 157: while (1)
-"157
+[; ;main.c: 167: while (1)
+"167
 [e :U 1438 ]
-[; ;main.c: 158: {
-"158
+[; ;main.c: 168: {
+"168
 {
-[; ;main.c: 161: WSLoop();
-"161
+[; ;main.c: 169: GIE = 0;
+"169
+[e = _GIE -> -> 0 `i `b ]
+[; ;main.c: 171: WSLoop();
+"171
 [e ( _WSLoop ..  ]
-"163
+[; ;main.c: 174: GIE =1;
+"174
+[e = _GIE -> -> 1 `i `b ]
+"175
 }
 [e :U 1437 ]
-"157
+"167
 [e $U 1438  ]
 [e :U 1439 ]
-[; ;main.c: 163: }
-[; ;main.c: 164: }
-"164
+[; ;main.c: 175: }
+[; ;main.c: 176: }
+"176
 [e :UE 1436 ]
 }
