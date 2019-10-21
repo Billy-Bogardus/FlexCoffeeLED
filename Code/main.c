@@ -42,47 +42,93 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+//#include <pic16f1826.h>
+#include <xc.h>
+#include <htc.h> 
+#include <stdint.h>
+#define _XTAL_FREQ 32000000
 
-#define WSReset 50000 //Time in nano Seconds
-#define WSPulse0H 400
-#define WSPulse0L 850
-#define WSPulse1H 800
-#define WSPulse1L 450
-#define WSTotal 1250
-#define WSERROR 150
+#define WSReset 50.000 //Time in milli Seconds
+#define WSPulse0H 0.400
+#define WSPulse0L 0.850
+#define WSPulse1H 0.800
+#define WSPulse1L 0.450
+#define WSTotal 1.250
+#define WSERROR 0.150
 
-//WSLoop function for bitbanging WS2812B controlls
-void WSLoop(void)
-{
-    __delay_ns();
-}
+// declare variables
+void WS_Word(char A, char B, char C);
+void WS_Write( int A );
+void WSLoop(void);
 
 void WS_Word(char A, char B, char C)
 {
-    bit B = 0;
-    for(i=0; i!=24; i++)
+   ///Green B   Red A    Blue C
+   ///0      7  8     15 16     23      
+   ///01234567  01234567  01234567
+    
+    int Bx = 0;
+    for(int i=0; i!=24; i++)
     {
-        WS_Write(B);
+        if(i>15)
+        {
+            int x = i - 16;
+            Bx = 1 & ( C >> x );
+        }
+        else if ( i > 7 )
+        {
+            int x = i - 8;
+            Bx = 0b00000001 & ( A >> x );
+        }
+        else if ( i >= 0 )
+        {
+            int x = i;
+            Bx = 0b00000001 & ( B >> x );
+        }
+        else
+        {
+            Bx = 1;
+        }
+        WS_Write(Bx);
     }        
 }
 
-void WS_Write(__Bool A)
+void WS_Write( int A )
 {
     if(A)
     {
-        LATAbits.LATA2 = 1
-        __delay_ns(WSPulse1H);
+        LATAbits.LATA2 = 1;
+        __delay_ms(WSPulse1H);
         LATAbits.LATA2 = 0;
-        __delay_ns(WSPulse1L);
+        __delay_ms(WSPulse1L);
     }
     else
     {
         LATAbits.LATA2 = 1;
-        __delay_ns(WSPulse0H);
+        __delay_ms(WSPulse0H);
         LATAbits.LATA2 = 0;
-        __delay_ns(WSPulse0L);
-        
+        __delay_ms(WSPulse0L);
     }
+    
+}
+
+
+//WSLoop function for bitbanging WS2812B controlls
+void WSLoop(void)
+{
+///    __delay_ns();
+    WS_Word(0xFF, 0x00, 0x00); //Red
+    WS_Word(0x00, 0xFF, 0x00); //Green
+    WS_Word(0x00, 0x00, 0xFF); //Blue
+    
+    //delay
+    __delay_ms(WSReset);
+    WS_Word(0xFF, 0xFF, 0xFF); //Red
+    WS_Word(0xFF, 0xFF, 0xFF); //Green
+    WS_Word(0x00, 0x00, 0x00); //Blue
+    
+    //delay
+    __delay_ms(WSReset);
 }
 
 /*
@@ -110,6 +156,9 @@ void main(void)
 
     while (1)
     {
+        
+        //LATAbits.LATA2 = 0;
+        WSLoop();//try my code
         // Add your application code
     }
 }
