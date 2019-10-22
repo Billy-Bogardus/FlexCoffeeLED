@@ -4,6 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="LM75BTemp" displayName="LM75BTemp" projectFiles="true">
+        <itemPath>LM75BTemp.h</itemPath>
+      </logicalFolder>
       <logicalFolder name="MCC Generated Files"
                      displayName="MCC Generated Files"
                      projectFiles="true">
@@ -13,6 +16,9 @@
         <itemPath>mcc_generated_files/i2c1.h</itemPath>
         <itemPath>mcc_generated_files/mcc.h</itemPath>
       </logicalFolder>
+      <logicalFolder name="WS2812b" displayName="WS2812b" projectFiles="true">
+        <itemPath>WS2812b/BitBangWS2812b.h</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -21,6 +27,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="LM75BTemp" displayName="LM75BTemp" projectFiles="true">
+        <itemPath>LM75BTemp.c</itemPath>
+      </logicalFolder>
       <logicalFolder name="MCC Generated Files"
                      displayName="MCC Generated Files"
                      projectFiles="true">
@@ -29,6 +38,9 @@
         <itemPath>mcc_generated_files/mcc.c</itemPath>
         <itemPath>mcc_generated_files/pin_manager.c</itemPath>
         <itemPath>mcc_generated_files/i2c1.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="WS2812b" displayName="WS2812b" projectFiles="true">
+        <itemPath>WS2812b/BitBangWS2812b.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
     </logicalFolder>

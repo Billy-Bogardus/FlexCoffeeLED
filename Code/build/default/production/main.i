@@ -17649,106 +17649,28 @@ void OSCILLATOR_Initialize(void);
 # 96
 void PMD_Initialize(void);
 
-# 60 "main.c"
-void WS_Word(char A, char B, char C);
-void WS_Write( int A );
+# 37 "WS2812b/BitBangWS2812b.h"
+void WS_Word(int A, int B, int C);
+
+# 43
+void WS_Write(int);
+
+# 48
 void WSLoop(void);
 
-void WS_Word(char A, char B, char C)
-{
+# 54
+void WS_White(void);
 
-
-
-
-int Bx = 0;
-for(int i=23; i!=-1; i--)
-{
-if(i>15)
-{
-int x = i - 16;
-Bx = 1 & ( C >> x );
-}
-else if ( i > 7 )
-{
-int x = i - 8;
-Bx = 0b00000001 & ( A >> x );
-}
-else if ( i >= 0 )
-{
-int x = i;
-Bx = 0b00000001 & ( B >> x );
-}
-else
-{
-Bx = 1;
-}
-WS_Write(Bx);
-}
-}
-
-void WS_Write( int A )
-{
-if(A)
-{
-LATAbits.LATA2 = 1;
-__nop();
-__nop();
-__nop();
-
-LATAbits.LATA2 = 0;
-
-}
-else
-{
-LATAbits.LATA2 = 1;
-
-LATAbits.LATA2 = 0;
-__nop();
-__nop();
-__nop();
-
-}
-
-}
-
-
-
-void WSLoop(void)
-{
-
-
-
-
-WS_Word(0x05, 0x00, 0x00);
-WS_Word(0x00, 0x05, 0x00);
-WS_Word(0x00, 0x00, 0x05);
-WS_Word(0x05, 0x05, 0x05);
-WS_Word(0x05, 0x00, 0x05);
-WS_Word(0x00, 0x05, 0x05);
-
-
-
-_delay((unsigned long)((60.000)*(32000000/4000.0)));
-
-
-
-}
-
-# 147
+# 51 "main.c"
 void main(void)
 {
 
 SYSTEM_Initialize();
 
-# 167
 while (1)
 {
-GIE = 0;
-
 WSLoop();
 
-
-GIE =1;
 }
 }
 
