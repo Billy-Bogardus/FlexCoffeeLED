@@ -32,7 +32,7 @@ intentry CODE 0 4 4 13 2
 bssBANK0 BANK0 1 37 37 13 1
 clrtext CODE 0 516 516 6 2
 bssCOMMON COMMON 1 70 70 6 1
-$C:\Users\Bill\AppData\Local\Temp\sblo.o
+$C:\Users\Bill\AppData\Local\Temp\s6g4.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 17 17 2 2
 config CONFIG 0 8007 8007 5 2
@@ -187,24 +187,24 @@ STRING 51F-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Code.production.o
-19 cinit CODE >7195:C:\Users\Bill\AppData\Local\Temp\sblo.s
-19 cinit CODE >7198:C:\Users\Bill\AppData\Local\Temp\sblo.s
-19 cinit CODE >7258:C:\Users\Bill\AppData\Local\Temp\sblo.s
-1A cinit CODE >7259:C:\Users\Bill\AppData\Local\Temp\sblo.s
-1B cinit CODE >7260:C:\Users\Bill\AppData\Local\Temp\sblo.s
-1C cinit CODE >7261:C:\Users\Bill\AppData\Local\Temp\sblo.s
-1D cinit CODE >7262:C:\Users\Bill\AppData\Local\Temp\sblo.s
-1E cinit CODE >7263:C:\Users\Bill\AppData\Local\Temp\sblo.s
-1F cinit CODE >7267:C:\Users\Bill\AppData\Local\Temp\sblo.s
-20 cinit CODE >7268:C:\Users\Bill\AppData\Local\Temp\sblo.s
-21 cinit CODE >7269:C:\Users\Bill\AppData\Local\Temp\sblo.s
-22 cinit CODE >7270:C:\Users\Bill\AppData\Local\Temp\sblo.s
-23 cinit CODE >7271:C:\Users\Bill\AppData\Local\Temp\sblo.s
-24 cinit CODE >7272:C:\Users\Bill\AppData\Local\Temp\sblo.s
-26 cinit CODE >7278:C:\Users\Bill\AppData\Local\Temp\sblo.s
-26 cinit CODE >7280:C:\Users\Bill\AppData\Local\Temp\sblo.s
-27 cinit CODE >7281:C:\Users\Bill\AppData\Local\Temp\sblo.s
-28 cinit CODE >7282:C:\Users\Bill\AppData\Local\Temp\sblo.s
+19 cinit CODE >7195:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+19 cinit CODE >7198:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+19 cinit CODE >7258:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+1A cinit CODE >7259:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+1B cinit CODE >7260:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+1C cinit CODE >7261:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+1D cinit CODE >7262:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+1E cinit CODE >7263:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+1F cinit CODE >7267:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+20 cinit CODE >7268:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+21 cinit CODE >7269:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+22 cinit CODE >7270:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+23 cinit CODE >7271:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+24 cinit CODE >7272:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+26 cinit CODE >7278:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+26 cinit CODE >7280:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+27 cinit CODE >7281:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+28 cinit CODE >7282:C:\Users\Bill\AppData\Local\Temp\s6g4.s
 4 intentry CODE >52:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/interrupt_manager.c
 6 intentry CODE >55:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/interrupt_manager.c
 8 intentry CODE >57:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\mcc_generated_files/interrupt_manager.c
@@ -462,14 +462,14 @@ F3 text1 CODE >89:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\WS2812b/BitBang
 50F maintext CODE >54:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
 512 maintext CODE >56:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
 512 maintext CODE >58:D:\UserData\Documents\KiCad\FlexCoffeeLED\Code\main.c
-516 clrtext CODE >7247:C:\Users\Bill\AppData\Local\Temp\sblo.s
-516 clrtext CODE >7248:C:\Users\Bill\AppData\Local\Temp\sblo.s
-517 clrtext CODE >7249:C:\Users\Bill\AppData\Local\Temp\sblo.s
-517 clrtext CODE >7250:C:\Users\Bill\AppData\Local\Temp\sblo.s
-518 clrtext CODE >7251:C:\Users\Bill\AppData\Local\Temp\sblo.s
-519 clrtext CODE >7252:C:\Users\Bill\AppData\Local\Temp\sblo.s
-51A clrtext CODE >7253:C:\Users\Bill\AppData\Local\Temp\sblo.s
-51B clrtext CODE >7254:C:\Users\Bill\AppData\Local\Temp\sblo.s
+516 clrtext CODE >7247:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+516 clrtext CODE >7248:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+517 clrtext CODE >7249:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+517 clrtext CODE >7250:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+518 clrtext CODE >7251:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+519 clrtext CODE >7252:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+51A clrtext CODE >7253:C:\Users\Bill\AppData\Local\Temp\s6g4.s
+51B clrtext CODE >7254:C:\Users\Bill\AppData\Local\Temp\s6g4.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -506,10 +506,10 @@ _PMD6 79C 0 ABS 0 - dist/default/production\Code.production.o
 _PMD7 79D 0 ABS 0 - dist/default/production\Code.production.o
 _WPUA 1F39 0 ABS 0 - dist/default/production\Code.production.o
 _WPUC 1F4F 0 ABS 0 - dist/default/production\Code.production.o
-___sp 0 0 STACK 2 stack C:\Users\Bill\AppData\Local\Temp\sblo.o
+___sp 0 0 STACK 2 stack C:\Users\Bill\AppData\Local\Temp\s6g4.o
 _main A1E 0 CODE 0 maintext dist/default/production\Code.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Code.production.o
-start 2E 0 CODE 0 init C:\Users\Bill\AppData\Local\Temp\sblo.o
+start 2E 0 CODE 0 init C:\Users\Bill\AppData\Local\Temp\s6g4.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Code.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __size_of_I2C1_ISR 0 0 ABS 0 - dist/default/production\Code.production.o
@@ -519,12 +519,12 @@ _WS_Word 812 0 CODE 0 text2 dist/default/production\Code.production.o
 I2C1_ISR@i2c_address 74 0 COMMON 1 bssCOMMON dist/default/production\Code.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\Code.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\sblo.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\sblo.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\sblo.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\sblo.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\sblo.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\sblo.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s6g4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s6g4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s6g4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s6g4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s6g4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Bill\AppData\Local\Temp\s6g4.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 I2C1_ISR@pi2c_buf_ptr 3E 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
 __end_of_WSLoop 5A6 0 CODE 0 text1 dist/default/production\Code.production.o
@@ -548,8 +548,8 @@ WS_Write@A 20 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
 __CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
 _INLVLA 1F3C 0 ABS 0 - dist/default/production\Code.production.o
 _INLVLC 1F52 0 ABS 0 - dist/default/production\Code.production.o
-___stackhi 27EF 0 ABS 0 - C:\Users\Bill\AppData\Local\Temp\sblo.o
-___stacklo 202A 0 ABS 0 - C:\Users\Bill\AppData\Local\Temp\sblo.o
+___stackhi 27EF 0 ABS 0 - C:\Users\Bill\AppData\Local\Temp\s6g4.o
+___stacklo 202A 0 ABS 0 - C:\Users\Bill\AppData\Local\Temp\s6g4.o
 __CFG_SAFEN$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
 _i2c1_trb_count 72 0 COMMON 1 bssCOMMON dist/default/production\Code.production.o
 _PIN_MANAGER_Initialize 8FA 0 CODE 0 text6 dist/default/production\Code.production.o
@@ -567,7 +567,7 @@ clear_ram0 A2C 0 CODE 0 clrtext dist/default/production\Code.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
 I2C1_MasterRead@trBlock 3F 0 BANK0 1 bssBANK0 dist/default/production\Code.production.o
 _WSLoop 54 0 CODE 0 text1 dist/default/production\Code.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Bill\AppData\Local\Temp\sblo.o
+___int_sp 0 0 STACK 2 stack C:\Users\Bill\AppData\Local\Temp\s6g4.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -813,13 +813,13 @@ WS_Word@i 33 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
 WS_Word@x 2B 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
 __CFG_BBEN$OFF 0 0 ABS 0 - dist/default/production\Code.production.o
 I2C1_Stop@completion_code 77 0 COMMON 1 cstackCOMMON dist/default/production\Code.production.o
-WS_Word@x_529 2D 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
-WS_Word@x_530 2F 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
+WS_Word@x_518 2D 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
+WS_Word@x_519 2F 0 BANK0 1 cstackBANK0 dist/default/production\Code.production.o
 _SYSTEM_Initialize 9E0 0 CODE 0 text4 dist/default/production\Code.production.o
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Code.production.o
 __size_of_WS_Word 0 0 ABS 0 - dist/default/production\Code.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Bill\AppData\Local\Temp\sblo.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Bill\AppData\Local\Temp\s6g4.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\Code.production.o
 _INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\Code.production.o

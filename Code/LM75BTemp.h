@@ -11,6 +11,8 @@
 #define	LM75BTEMP_HEADDER_H
 
 #include <xc.h> // include processor files - each processor file is guarded.  
+#include "i2c1.h"
+
 
 #define ADDRESS0 0x90 //Bottom
 #define ADDRESS2 0x94 //Middle
@@ -49,11 +51,16 @@
  * 7:5 least significant byte
  * 4:0 read but ignore in calculation
  * 
- * T in C = temp * 0.125
- * T in C = - ~temp * 0.125
+ * T in C = temp * 0.125(/8)
+ * T in C = - ~temp * 0.125(/8)
  */
 #define LM758_Tos  0x03 //Over tepm shutdown POR 0x5000
 #define LM758_Thyst 0x02 //Hysteresis register POR 0x4B00
 
 #endif	/* XC_HEADER_TEMPLATE_H */
+
+/* 
+ * Convert raw to integer for Celsius or Farenheit
+ */
+signed int LM758BintoInt(signed int Raw, bool CorF = 1);
 

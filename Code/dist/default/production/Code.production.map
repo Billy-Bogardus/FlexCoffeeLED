@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\dat\en_msgs.txt \
   -cs -h+dist/default/production\Code.production.sym \
   --cmf=dist/default/production\Code.production.cmf -z -Q16F18426 \
-  -oC:\Users\Bill\AppData\Local\Temp\sblo.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\Bill\AppData\Local\Temp\s6g4.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Code.production.map -E1 -ver=XC8 \
   -ASTACK=0202Ah-027EFh -pstack=STACK -ACODE=00h-07FFhx8 \
   -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 \
@@ -46,7 +46,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=08007h-0800Bh -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\Bill\AppData\Local\Temp\sblo.o \
+  -DENTRY=2 -k C:\Users\Bill\AppData\Local\Temp\s6g4.o \
   dist/default/production\Code.production.o 
 
 Object code version is 3.11
@@ -56,7 +56,7 @@ Machine type is 16F18426
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Bill\AppData\Local\Temp\sblo.o
+C:\Users\Bill\AppData\Local\Temp\s6g4.o
                 end_init                             17       17        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        5    1000E       0
@@ -550,8 +550,8 @@ WS_Word@Bx                           cstackBANK0  00031
 WS_Word@C                            cstackBANK0  00026
 WS_Word@i                            cstackBANK0  00033
 WS_Word@x                            cstackBANK0  0002B
-WS_Word@x_529                        cstackBANK0  0002D
-WS_Word@x_530                        cstackBANK0  0002F
+WS_Word@x_518                        cstackBANK0  0002D
+WS_Word@x_519                        cstackBANK0  0002F
 WS_Write@A                           cstackBANK0  00020
 _ANSELA                              (abs)        01F38
 _ANSELC                              (abs)        01F4E

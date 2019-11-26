@@ -57,6 +57,7 @@ _INTERRUPT_InterruptManager 4 0 CODE 0
 __size_of_WS_Write 0 0 ABS 0
 __Hcommon 0 0 ABS 0
 __Lcommon 0 0 ABS 0
+WS_Word@x_518 2D 0 BANK0 1
 _PIE3bits 719 0 ABS 0
 __Heeprom_data 0 0 EEDATA 3
 __Leeprom_data 0 0 EEDATA 3
@@ -103,6 +104,7 @@ __size_of_I2C1_BusCollisionISR 0 0 ABS 0
 I2C1_ISR@i2c_10bit_address_restart 3C 0 BANK0 1
 ___stackhi 27EF 0 ABS 0
 I2C1_MasterWrite@trBlock 43 0 BANK0 1
+WS_Word@x_519 2F 0 BANK0 1
 __end_of_I2C1_FunctionComplete 4E1 0 CODE 0
 __Hcode 0 0 ABS 0
 __Lcode 0 0 ABS 0
@@ -117,7 +119,6 @@ __end_of_main 516 0 CODE 0
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 I2C1_MasterRead@trBlock 3F 0 BANK0 1
-WS_Word@x_529 2D 0 BANK0 1
 __CFG_WDTCWS$WDTCWS_7 0 0 ABS 0
 __CFG_LVP$ON 0 0 ABS 0
 end_of_initialization 26 0 CODE 0
@@ -295,7 +296,6 @@ __Hspace_0 800C 0 ABS 0
 __Lspace_0 0 0 ABS 0
 __CFG_ZCDDIS$OFF 0 0 ABS 0
 __end_of_I2C1_ISR 409 0 CODE 0
-WS_Word@x_530 2F 0 BANK0 1
 __Hspace_1 7C 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hspace_2 0 0 ABS 0
@@ -495,7 +495,7 @@ bssCOMMON 70 7B COMMON 70 1
 cstackBANK0 20 49 BANK0 20 1
 %locals
 dist/default/production\Code.production.o
-C:\Users\Bill\AppData\Local\Temp\sblo.s
+C:\Users\Bill\AppData\Local\Temp\s6g4.s
 7195 19 0 CODE 0
 7198 19 0 CODE 0
 7258 19 0 CODE 0

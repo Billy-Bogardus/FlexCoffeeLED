@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Mon Oct 21 21:43:30 2019
+                                                                                               Sat Nov 23 10:08:57 2019
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	16F18426
@@ -3684,13 +3684,13 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3670  0076                     ??_I2C1_FunctionComplete:	
   3671                           ; 1 bytes @ 0x0
   3672                           
-  3673  0076                     ?_WSLoop:	
+  3673  0076                     ?_INTERRUPT_InterruptManager:	
   3674                           ; 1 bytes @ 0x0
   3675                           
-  3676  0076                     ?_INTERRUPT_InterruptManager:	
+  3676  0076                     ?_SYSTEM_Initialize:	
   3677                           ; 1 bytes @ 0x0
   3678                           
-  3679  0076                     ?_SYSTEM_Initialize:	
+  3679  0076                     ?_WSLoop:	
   3680                           ; 1 bytes @ 0x0
   3681                           
   3682  0076                     ?_main:	
@@ -3762,11 +3762,11 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3748                           
   3749                           ; 2 bytes @ 0xB
   3750  002B                     	ds	2
-  3751  002D                     WS_Word@x_529:	
+  3751  002D                     WS_Word@x_518:	
   3752                           
   3753                           ; 2 bytes @ 0xD
   3754  002D                     	ds	2
-  3755  002F                     WS_Word@x_530:	
+  3755  002F                     WS_Word@x_519:	
   3756                           
   3757                           ; 2 bytes @ 0xF
   3758  002F                     	ds	2
@@ -3834,13 +3834,13 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3815                           ;incstack = 0
   3816                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
   3817  050F  3184  24F0  3185   	fcall	_SYSTEM_Initialize
-  3818  0512                     l265:	
+  3818  0512                     l297:	
   3819                           ;main.c: 56: while (1)
   3820                           
   3821                           
   3822                           ;main.c: 57: {;main.c: 58: WSLoop();
   3823  0512  3180  202A  3185   	fcall	_WSLoop
-  3824  0515  2D12               	goto	l265
+  3824  0515  2D12               	goto	l297
   3825  0516                     __end_of_main:	
   3826                           
   3827                           	psect	text1
@@ -4722,19 +4722,19 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   4693  0434  1903               	btfsc	3,2
   4694  0435  0233               	subwf	WS_Word@i,w
   4695  0436  1C03               	skipc
-  4696  0437  2C4C               	goto	l285
+  4696  0437  2C4C               	goto	l273
   4697                           
   4698                           ;BitBangWS2812b.c: 27: {;BitBangWS2812b.c: 28: int x = i - 8;
   4699  0438  0140               	movlb	0	; select bank0
   4700  0439  0833               	movf	WS_Word@i,w
   4701  043A  3EF8               	addlw	248
-  4702  043B  00AD               	movwf	WS_Word@x_529
+  4702  043B  00AD               	movwf	WS_Word@x_518
   4703  043C  30FF               	movlw	255
   4704  043D  3D34               	addwfc	WS_Word@i+1,w
-  4705  043E  00AE               	movwf	WS_Word@x_529+1
+  4705  043E  00AE               	movwf	WS_Word@x_518+1
   4706                           
   4707                           ;BitBangWS2812b.c: 29: Bx = 0b00000001 & ( A >> x );
-  4708  043F  0A2D               	incf	WS_Word@x_529,w
+  4708  043F  0A2D               	incf	WS_Word@x_518,w
   4709  0440  00A8               	movwf	??_WS_Word
   4710  0441  0823               	movf	WS_Word@A+1,w
   4711  0442  00AA               	movwf	??_WS_Word+2
@@ -4749,7 +4749,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   4720  0449  0BA8               	decfsz	??_WS_Word,f
   4721  044A  2C46               	goto	u775
   4722  044B  2C5F               	goto	L3
-  4723  044C                     l285:	
+  4723  044C                     l273:	
   4724                           ;BitBangWS2812b.c: 30: }
   4725                           
   4726                           
@@ -4760,12 +4760,12 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   4731                           
   4732                           ;BitBangWS2812b.c: 32: {;BitBangWS2812b.c: 33: int x = i;
   4733  044F  0834               	movf	WS_Word@i+1,w
-  4734  0450  00B0               	movwf	WS_Word@x_530+1
+  4734  0450  00B0               	movwf	WS_Word@x_519+1
   4735  0451  0833               	movf	WS_Word@i,w
-  4736  0452  00AF               	movwf	WS_Word@x_530
+  4736  0452  00AF               	movwf	WS_Word@x_519
   4737                           
   4738                           ;BitBangWS2812b.c: 34: Bx = 0b00000001 & ( C >> x );
-  4739  0453  0A2F               	incf	WS_Word@x_530,w
+  4739  0453  0A2F               	incf	WS_Word@x_519,w
   4740  0454  00A8               	movwf	??_WS_Word
   4741  0455  0827               	movf	WS_Word@C+1,w
   4742  0456  00AA               	movwf	??_WS_Word+2
@@ -4867,7 +4867,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   4833  04E2  0820               	movf	WS_Write@A,w
   4834  04E3  0421               	iorwf	WS_Write@A+1,w
   4835  04E4  1903               	btfsc	3,2
-  4836  04E5  2CED               	goto	l292
+  4836  04E5  2CED               	goto	l280
   4837                           
   4838                           ;BitBangWS2812b.c: 48: {;BitBangWS2812b.c: 49: LATAbits.LATA2 = 1;
   4839  04E6  1518               	bsf	24,2	;volatile
@@ -4887,7 +4887,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   4853                           
   4854                           ;BitBangWS2812b.c: 54: }
   4855  04EC  0008               	return
-  4856  04ED                     l292:	
+  4856  04ED                     l280:	
   4857                           
   4858                           ;BitBangWS2812b.c: 55: else;BitBangWS2812b.c: 56: {;BitBangWS2812b.c: 57: LATAbits.LATA2
       +                           = 1;
@@ -6740,11 +6740,11 @@ SFR63                0      0       0      64        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Mon Oct 21 21:43:30 2019
+Symbol Table                                                                                   Sat Nov 23 10:08:57 2019
 
                         __CFG_CP$OFF 0000                          __CFG_LVP$ON 0000  
-                                l265 0512                                  l292 04ED  
-                                l285 044C                                  _GIE 005F  
+                                l280 04ED                                  l273 044C  
+                                l297 0512                                  _GIE 005F  
                                 u745 0417                                  u817 0088  
                                 u754 042A                                  u755 0427  
                                 u907 0259                                  u827 0095  
@@ -6865,7 +6865,7 @@ __size_of_INTERRUPT_InterruptManager 0013                             _PIR3bits 
                          _INTCONbits 000B                             intlevel1 0000  
             ?_PIN_MANAGER_Initialize 0076                    __CFG_CLKOUTEN$OFF 0000  
      __size_of_I2C1_FunctionComplete 0010        __end_of_I2C1_FunctionComplete 04E1  
-                       WS_Word@x_530 002F                         WS_Word@x_529 002D  
+                       WS_Word@x_518 002D                         WS_Word@x_519 002F  
            __size_of_I2C1_Initialize 0019                           _SSP1DATPPS 1EC6  
                          _SSP1CLKPPS 1EC5       __end_of_PIN_MANAGER_Initialize 04A1  
                  __size_of_I2C1_Stop 0017  
