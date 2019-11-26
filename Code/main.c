@@ -57,6 +57,7 @@ void main(void)
     {
         WSLoop();
         //WS_White();
+        I2C
     }
 }
 /**
